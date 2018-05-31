@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Xtern Bootcamp 2018</title>
-    <link>http://xtbc18s1.github.io/categories/</link>
+    <link>http://xtbc18s2.github.io/categories/</link>
     <description>Recent content in Categories on Xtern Bootcamp 2018</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://xtbc18s1.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://xtbc18s2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
