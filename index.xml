@@ -85,6 +85,18 @@ Cascading Stylesheets (CSS) define the presentation of web content. Even if you 
     </item>
     
     <item>
+      <title>Day 2: Functions and The DOM</title>
+      <link>http://xtbc18s2.github.io/week1/day2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://xtbc18s2.github.io/week1/day2/</guid>
+      <description>Tuesday, June 5, 2018
+Lecture Videos Morning:
+ Playlist | Day 2, part 1  Afternoon:
+ Playlist | Day 2, part 1  Topics Functions  Function Expressions Function Declarations Function Hoisting (MDN)  Git  Git Guide Git Basics Understanding Git (part 1): Explain It Like I&amp;rsquo;m Five   DOM  Creating elements with document.createElement Setting style properties with someElement.style.stylePropertyName Appending child elements with someElement.appendChild  Other Topics  Template literals Google Fonts Polyfills  Definition from MDN What is a Polyfill?</description>
+    </item>
+    
+    <item>
       <title>Editor</title>
       <link>http://xtbc18s2.github.io/setup-mac/editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
