@@ -12,17 +12,17 @@
     <title>Day 2: Functions and The DOM :: Xtern Bootcamp 2018</title>
     
     
-    <link href="/css/nucleus.css?1528230218" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528230218" rel="stylesheet">
-    <link href="/css/hybrid.css?1528230218" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528230218" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528230218" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528230218" rel="stylesheet">
-    <link href="/css/theme.css?1528230218" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528230218" rel="stylesheet">
+    <link href="/css/nucleus.css?1528301416" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528301416" rel="stylesheet">
+    <link href="/css/hybrid.css?1528301416" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528301416" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528301416" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528301416" rel="stylesheet">
+    <link href="/css/theme.css?1528301416" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528301416" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528230218"></script>
+    <script src="/js/jquery-2.x.min.js?1528301416"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528230218"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528230218"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528301416"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528301416"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528230218"></script>
+<script type="text/javascript" src="/js/search.js?1528301416"></script>
 
     
   </div>
@@ -677,6 +677,25 @@
 
             
           
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/week1/day3/" title="Day 3: The DOM Cont&#39;d / Arrays and Objects" class="dd-item ">
+        <a href="/week1/day3/">
+        Day 3: The DOM Cont&#39;d / Arrays and Objects
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -758,7 +777,6 @@
 <li><a href="#examples">Examples</a>
 <ul>
 <li><a href="#functions-1">Functions</a></li>
-<li><a href="#dom-1">DOM</a></li>
 </ul></li>
 <li><a href="#presentations">Presentations</a></li>
 <li><a href="#projects">Projects</a>
@@ -878,53 +896,6 @@
 </pre>
 
 
-
-<h3 id="dom-1">DOM</h3>
-
-<p>If we start with the following markup:
-
-<pre class="line-numbers language-html" rel="html">
-<code class="language-html">
-
-&lt;div id=&quot;my-div&quot;&gt;&lt;/div&gt;
-
-</code>
-</pre>
-
-
-We can add additional markup to it programmatically using JavaScript.  One way is to create new HTML elements using <code>document.createElement</code>, and adding them by using <code>appendChild</code>.  Styling of the element can even be changed by manipulating the element&rsquo;s <code>style</code> property.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-// create an h1 and modify text content and color
-const heading = document.createElement('h1')
-heading.textContent = "This is the best heading I've ever seen"
-heading.style.color = "red"
-
-// get a reference to the existing div and add the heading as a child element
-const div = document.querySelector('#my-div')
-div.appendChild(heading)
-
-</code>
-</pre>
-
-
-
-<p>This will produce the following markup:
-
-<pre class="line-numbers language-html" rel="html">
-<code class="language-html">
-
-&lt;div id=&quot;my-div&quot;&gt;
-  &lt;h1 style=&quot;color: red;&quot;&gt;This is the best heading I've ever seen&lt;/h1&gt;
-&lt;/div&gt;
-
-</code>
-</pre>
-
-</p>
 
 <h2 id="presentations">Presentations</h2>
 
@@ -1467,6 +1438,25 @@ div.appendChild(heading)
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1480,7 +1470,7 @@ div.appendChild(heading)
             <a class="nav nav-prev" href="/week1/day1/" title="Day 1: Introduction"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/week1/day1/" title="Day 1: Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/week1/day3/" title="Day 3: The DOM Cont&#39;d / Arrays and Objects" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1489,20 +1479,20 @@ div.appendChild(heading)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528230218"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528230218"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528230218"></script>
-    <script src="/js/jquery.sticky.js?1528230218"></script>
-    <script src="/js/featherlight.min.js?1528230218"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528230218"></script>
-    <script src="/js/highlight.pack.js?1528230218"></script>
+    <script src="/js/clipboard.min.js?1528301416"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528301416"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528301416"></script>
+    <script src="/js/jquery.sticky.js?1528301416"></script>
+    <script src="/js/featherlight.min.js?1528301416"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528301416"></script>
+    <script src="/js/highlight.pack.js?1528301416"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528230218"></script>
-    <script src="/js/learn.js?1528230218"></script>
-    <script src="/js/hugo-learn.js?1528230218"></script>
+    <script src="/js/modernizr.custom.71422.js?1528301416"></script>
+    <script src="/js/learn.js?1528301416"></script>
+    <script src="/js/hugo-learn.js?1528301416"></script>
 
-    <link href="/mermaid/mermaid.css?1528230218" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528230218"></script>
+    <link href="/mermaid/mermaid.css?1528301416" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528301416"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

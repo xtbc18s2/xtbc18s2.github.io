@@ -34,5 +34,17 @@ Lecture Videos Morning:
  Playlist | Day 2, part 1  Topics Functions  Function Expressions Function Declarations Function Hoisting (MDN)  Git  Git Guide Git Basics Understanding Git (part 1): Explain It Like I&amp;rsquo;m Five   DOM  Creating elements with document.createElement Setting style properties with someElement.style.stylePropertyName Appending child elements with someElement.appendChild  Other Topics  Template literals Google Fonts Polyfills  Definition from MDN What is a Polyfill?</description>
     </item>
     
+    <item>
+      <title>Day 3: The DOM Cont&#39;d / Arrays and Objects</title>
+      <link>http://xtbc18s2.github.io/week1/day3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://xtbc18s2.github.io/week1/day3/</guid>
+      <description>Wednesday, June 6, 2018
+Lecture Videos Morning:
+ Playlist | Day 3, part 1  Afternoon:
+ Playlist  Topics DOM If we start with the following markup: &amp;lt;div id=&amp;quot;my-div&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;   We can add additional markup to it programmatically using JavaScript. One way is to create new HTML elements using document.createElement, and adding them by using appendChild. Styling of the element can even be changed by manipulating the element&amp;rsquo;s style property.</description>
+    </item>
+    
   </channel>
 </rss>

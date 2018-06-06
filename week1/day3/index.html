@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>JavaScript :: Xtern Bootcamp 2018</title>
+    <title>Day 3: The DOM Cont&#39;d / Arrays and Objects :: Xtern Bootcamp 2018</title>
     
     
     <link href="/css/nucleus.css?1528301416" rel="stylesheet">
@@ -36,7 +36,7 @@
 <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/prereqs/javascript/">
+  <body class="" data-url="/week1/day3/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/prereqs/" title="Prerequisites" class="dd-item 
-        parent
+        
         
         
         ">
@@ -138,7 +138,7 @@
  
   
     
-      <li data-nav-id="/prereqs/javascript/" title="JavaScript" class="dd-item active">
+      <li data-nav-id="/prereqs/javascript/" title="JavaScript" class="dd-item ">
         <a href="/prereqs/javascript/">
         JavaScript
         
@@ -622,7 +622,7 @@
   
     
     <li data-nav-id="/week1/" title="Week I" class="dd-item 
-        
+        parent
         
         
         ">
@@ -684,7 +684,7 @@
  
   
     
-      <li data-nav-id="/week1/day3/" title="Day 3: The DOM Cont&#39;d / Arrays and Objects" class="dd-item ">
+      <li data-nav-id="/week1/day3/" title="Day 3: The DOM Cont&#39;d / Arrays and Objects" class="dd-item active">
         <a href="/week1/day3/">
         Day 3: The DOM Cont&#39;d / Arrays and Objects
         
@@ -750,7 +750,7 @@
             
           
           
-            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/prereqs/'>Prerequisites</a> > JavaScript
+            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week1/'>Week I</a> > Day 3: The DOM Cont'd / Arrays and Objects
           
          
           
@@ -766,13 +766,34 @@
 <ul>
 <li>
 <ul>
-<li><a href="#basic">Basic</a>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#learn-javascript-by-codecademy">Learn JavaScript by Codecademy</a></li>
+<li><a href="#dom">DOM</a></li>
+<li><a href="#arrays">Arrays</a></li>
+<li><a href="#objects">Objects</a></li>
+<li><a href="#handling-exceptions">Handling exceptions</a></li>
+<li><a href="#styling">Styling</a>
+<ul>
+<li><a href="#flexbox">Flexbox</a></li>
+<li><a href="#tips-and-tricks-on-css">Tips and Tricks on CSS</a></li>
 </ul></li>
-<li><a href="#intermediate">Intermediate</a>
+<li><a href="#this">This</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
 <ul>
-<li><a href="#javascript-30-by-wes-bos">JavaScript 30 by Wes Bos</a></li>
+<li><a href="#arrays-1">Arrays</a></li>
+<li><a href="#objects-1">Objects</a></li>
+<li><a href="#this-1">This</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a>
+<ul>
+<li><a href="#spellbook">Spellbook</a></li>
+</ul></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -788,7 +809,7 @@
         
         <div id="body-inner">
           
-            <h1>JavaScript</h1>
+            <h1>Day 3: The DOM Cont&#39;d / Arrays and Objects</h1>
           
 
         
@@ -796,19 +817,290 @@
 
 
 
-<p>React is a JavaScript library, so it&rsquo;s fair to say that we&rsquo;ll be using a whole heck of a lot of JavaScript in this bootcamp. You ought to be familiar with the fundamentals of JavaScript before class begins.</p>
+<p><date>Wednesday, June 6, 2018</date></p>
 
-<h2 id="basic">Basic</h2>
+<h2 id="lecture-videos">Lecture Videos</h2>
 
-<h3 id="learn-javascript-by-codecademy">Learn JavaScript by Codecademy</h3>
+<p>Morning:</p>
 
-<p><a href="https://www.codecademy.com/learn/learn-javascript">Learn JavaScript</a> is another free, interactive tutorial that replaced an older Codecademy course.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=ISXr_1-5FzE&amp;index=22&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Day 3, part 1</a></li>
+</ul>
 
-<h2 id="intermediate">Intermediate</h2>
+<p>Afternoon:</p>
 
-<h3 id="javascript-30-by-wes-bos">JavaScript 30 by Wes Bos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a></li>
+</ul>
 
-<p>I highly recommend completing <a href="https://javascript30.com/">JavaScript 30</a> by Wes Bos. It&rsquo;s a series of thirty 20-minute videos, meant to be completed over the course of 30 days. That will take some planning on your part, obviously; you can&rsquo;t wait until the last second to dive into this stuff. But it&rsquo;s not a huge daily time commitment, and it will help a great deal.</p>
+<h2 id="topics">Topics</h2>
+
+<h3 id="dom">DOM</h3>
+
+<p>If we start with the following markup:
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;div id=&quot;my-div&quot;&gt;&lt;/div&gt;
+
+</code>
+</pre>
+
+
+We can add additional markup to it programmatically using JavaScript.  One way is to create new HTML elements using <code>document.createElement</code>, and adding them by using <code>appendChild</code>.  Styling of the element can even be changed by manipulating the element&rsquo;s <code>style</code> property.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// create an h1 and modify text content and color
+const heading = document.createElement('h1')
+heading.textContent = "This is the best heading I've ever seen"
+heading.style.color = "red"
+
+// get a reference to the existing div and add the heading as a child element
+const div = document.querySelector('#my-div')
+div.appendChild(heading)
+
+</code>
+</pre>
+
+
+
+<p>This will produce the following markup:
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;div id=&quot;my-div&quot;&gt;
+  &lt;h1 style=&quot;color: red;&quot;&gt;This is the best heading I've ever seen&lt;/h1&gt;
+&lt;/div&gt;
+
+</code>
+</pre>
+
+</p>
+
+<ul>
+<li><a href="https://developers.google.com/web/tools/chrome-devtools/console/command-line-reference">&ldquo;Utilizing&rdquo; the Developer Tools: Selecting and Inspecting DOM Elements</a></li>
+</ul>
+
+<h3 id="arrays">Arrays</h3>
+
+<ul>
+<li><a href="https://codepen.io/dstrus/professor/WyxWQE/">CodPen Example</a></li>
+<li><code>Array.map</code> - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map?v=control">Docs on MDN</a></li>
+<li><a href="https://www.discovermeteor.com/blog/understanding-javascript-map/">Understanding JavaScript&rsquo;s <code>map()</code></a> blog post</li>
+</ul>
+
+<h3 id="objects">Objects</h3>
+
+<ul>
+<li>Object literals</li>
+<li>Property Naming</li>
+<li>Retrieving property values</li>
+<li>Setting property values</li>
+</ul>
+
+<h3 id="handling-exceptions">Handling exceptions</h3>
+
+<ul>
+<li><code>try</code></li>
+<li><code>catch</code></li>
+<li><code>finally</code></li>
+</ul>
+
+<h3 id="styling">Styling</h3>
+
+<h4 id="flexbox">Flexbox</h4>
+
+<ul>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></li>
+<li><a href="https://flexbox.io/">Flexbox.io</a></li>
+</ul>
+
+<h4 id="tips-and-tricks-on-css">Tips and Tricks on CSS</h4>
+
+<ul>
+<li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+<li><a href="https://css-tricks.com/almanac/properties/o/overflow/">Overflow Property in CSS</a></li>
+</ul>
+
+<h3 id="this">This</h3>
+
+<ul>
+<li><em>default</em> binding through function invocation</li>
+<li><em>implicit</em> binding through method calls</li>
+<li><em>explicit</em> binding with <code>.bind</code></li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="arrays-1">Arrays</h3>
+
+<p>Arrays are extremely useful data structures in JavaScript, as they can be easily iterated and transformed through methods like <code>map</code>, <code>filter</code>, and <code>reduce</code>.  Sometimes, you may have an &lsquo;array-like&rsquo; collection (like a <code>NodeList</code> or function arguments) that you would need to convert to an actual Array before you could use these methods.  This can be done using <code>Array.from</code></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+let paragraphs = document.querySelectorAll('p')
+paragraphs.map((p) => {
+  p.textContent = "This won't work because paragraphs is a NodeList, not Array!"
+})
+// => Uncaught TypeError: paragraphs.map is not a function
+
+let actualArrayOfParagraphs = Array.from(paragraphs)
+actualArrayOfParagraphs.map((p) => {
+  p.textContent = "This totally does work because we created an Array from our NodeList!"
+})
+
+</code>
+</pre>
+
+
+
+
+  <div class="aside aside-info">
+  
+    <h4>Requirements for &#39;Array.from&#39;</h4>
+    
+  
+  <div class="body">
+  <p>What objects can you convert to an Array using &lsquo;Array.from&rsquo;?</p>
+
+<ul>
+<li>Any array-like object with a &lsquo;length&rsquo; property and indexed elements</li>
+<li>Iterable objects (like Map or Set)</li>
+</ul>
+
+<p>For more info, check out <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from?v=control">this article</a> on MDN.</p>
+
+  </div>
+</div>
+
+
+<h3 id="objects-1">Objects</h3>
+
+<p>Almost everything in JavaScript is an Object.  The easiest way to create new Objects is with the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer">object initializer</a>, more commonly known as &lsquo;object literal&rsquo; syntax.  Basically, use curly braces to make an object <code>{}</code> and fill in the properties that you want.</p>
+
+<p>Objects contain <code>key</code>/<code>value</code> pairs that allow you to set and retrieve values from them.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// create a new object and assign some properties
+const myObject = {
+  prop1: 'Hello there',
+  prop2: 42
+}
+
+// access the values in several ways, usually 'dot' or 'square bracket' notation
+myObject.prop1 // => 'Hello there'
+myObject['prop1'] //=> 'Hello there'
+
+// new key/value pairs can also be assigned with these notations
+myObject.prop3 = 'New Value!'
+myObject['prop4'] = 'Newest Value!'
+
+console.log(myObject)
+// { 
+//   prop1: 'Hello there',
+//   prop2: 42,
+//   prop3: 'New Value!',
+//   prop4: 'Newest Value!'
+// }
+
+</code>
+</pre>
+
+
+
+<p>We know that we can iterate through an Array using <code>map</code> or <code>forEach</code>.  Can we do something similar with objects?  There are a few ways to do it, but one of the newest and easiest is the <code>Object.keys</code> method.  It iterates through the enumerable properties of an object, returning an array of the property keys. Once we have an array of keys, we can <code>map</code> over <em>that</em> and access each of the object properties individually.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const myObj = {
+  a: 'hi',
+  b: 42,
+  c: [1, 2, 3]
+}
+
+const myObjKeys = Object.keys(myObj)    // ['a', 'b', 'c']
+
+myObjKeys.map(key => myObj[key])        // ['hi', 42, [1, 2, 3]]
+
+</code>
+</pre>
+
+
+
+<h3 id="this-1">This</h3>
+
+<p>The same function can have different values for <code>this</code> depending on how the function is called/invoked.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const app = {
+  sayYeah() {
+    console.log(`Yeah, ${this}`)
+  },
+  
+  toString() {
+    return 'app object'
+  }
+}
+
+// When invoked as a method
+app.sayYeah() // "Yeah, app object"
+
+// When invoked as an event handler
+document
+  .querySelector('button')
+  .addEventListener('click', app.sayYeah)
+  // "Yeah, [object HTMLButtonElement]"
+
+// When manually set with bind
+app.sayYeah.bind('w00t')() // "Yeah, w00t"
+
+</code>
+</pre>
+
+
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">MDN Docs on ES6 Arrow Functions</a></li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<h3 id="spellbook">Spellbook</h3>
+
+<p><a href="https://github.com/xtbc18s2/spellbook">Morning</a> | <a href="https://github.com/xtbc18s2/spellbook/tree/afternoon">Afternoon</a></p>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>In addition to building a list item and adding it to the DOM (as we are now), also store each spell in an array.</li>
+</ul>
+
+<h3 id="bonus-credit">Bonus Credit</h3>
+
+<ul>
+<li>Add a <em>delete</em> button to each list item that removes it from the list.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Remove the item from the array as well.</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -847,20 +1139,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -871,125 +1149,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1263,6 +1422,70 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1330,6 +1553,75 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -1337,10 +1629,10 @@
 
 
         
-            <a class="nav nav-prev" href="/prereqs/html-css/" title="HTML &amp; CSS"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/week1/day2/" title="Day 2: Functions and The DOM"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/prereqs/git/" title="Git" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/week1/day1/" title="Day 1: Introduction" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
