@@ -138,7 +138,7 @@ Intermediate JavaScript 30 by Wes Bos I highly recommend completing JavaScript 3
       <description>Wednesday, June 6, 2018
 Lecture Videos Morning:
  Playlist | Day 3, part 1  Afternoon:
- Playlist  Topics DOM If we start with the following markup: &amp;lt;div id=&amp;quot;my-div&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;   We can add additional markup to it programmatically using JavaScript. One way is to create new HTML elements using document.createElement, and adding them by using appendChild. Styling of the element can even be changed by manipulating the element&amp;rsquo;s style property.</description>
+ Playlist | Day 3, part 1  Topics DOM If we start with the following markup: &amp;lt;div id=&amp;quot;my-div&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;   We can add additional markup to it programmatically using JavaScript. One way is to create new HTML elements using document.createElement, and adding them by using appendChild. Styling of the element can even be changed by manipulating the element&amp;rsquo;s style property.</description>
     </item>
     
     <item>
