@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Day 1: Introduction :: Xtern Bootcamp 2018</title>
+    <title>Day 5: Intro to React :: Xtern Bootcamp 2018</title>
     
     
     <link href="/css/nucleus.css?1528732657" rel="stylesheet">
@@ -36,7 +36,7 @@
 <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/week1/day1/">
+  <body class="" data-url="/week2/day5/">
     <nav id="sidebar" class="">
 
 
@@ -622,7 +622,7 @@
   
     
     <li data-nav-id="/week1/" title="Week I" class="dd-item 
-        parent
+        
         
         
         ">
@@ -646,7 +646,7 @@
  
   
     
-      <li data-nav-id="/week1/day1/" title="Day 1: Introduction" class="dd-item active">
+      <li data-nav-id="/week1/day1/" title="Day 1: Introduction" class="dd-item ">
         <a href="/week1/day1/">
         Day 1: Introduction
         
@@ -730,7 +730,7 @@
   
     
     <li data-nav-id="/week2/" title="Week II" class="dd-item 
-        
+        parent
         
         
         ">
@@ -754,7 +754,7 @@
  
   
     
-      <li data-nav-id="/week2/day5/" title="Day 5: Intro to React" class="dd-item ">
+      <li data-nav-id="/week2/day5/" title="Day 5: Intro to React" class="dd-item active">
         <a href="/week2/day5/">
         Day 5: Intro to React
         
@@ -820,7 +820,7 @@
             
           
           
-            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week1/'>Week I</a> > Day 1: Introduction
+            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week2/'>Week II</a> > Day 5: Intro to React
           
          
           
@@ -837,26 +837,31 @@
 <li>
 <ul>
 <li><a href="#lecture-videos">Lecture Videos</a></li>
-<li><a href="#topics">Topics</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#es2015-es6">ES2015+ (ES6+)</a></li>
+<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a></li>
+</ul></li>
 <li><a href="#examples">Examples</a>
 <ul>
-<li><a href="#git">Git</a>
+<li><a href="#react">React</a>
 <ul>
-<li><a href="#starting-a-new-project-with-a-git-repository">Starting a new project with a git repository</a></li>
+<li><a href="#basic-app">Basic App</a></li>
+<li><a href="#props">Props</a></li>
+<li><a href="#state">State</a></li>
+<li><a href="#modules">Modules</a></li>
 </ul></li>
-<li><a href="#dom-manipulation">DOM Manipulation</a></li>
 </ul></li>
 <li><a href="#presentations">Presentations</a></li>
-<li><a href="#links">Links</a></li>
-<li><a href="#projects">Projects</a>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
 <ul>
-<li><a href="#first-js">First JS</a></li>
-<li><a href="#spellbook">Spellbook</a></li>
-</ul></li>
-<li><a href="#homework">Homework</a></li>
+<li><a href="#basic-requirements">Basic Requirements</a></li>
 <li><a href="#bonus-credit">Bonus Credit</a></li>
+<li><a href="#super-bonus-credit">Super Bonus Credit</a></li>
 <li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
 <li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -871,7 +876,7 @@
         
         <div id="body-inner">
           
-            <h1>Day 1: Introduction</h1>
+            <h1>Day 5: Intro to React</h1>
           
 
         
@@ -879,171 +884,74 @@
 
 
 
-<p><date>Monday, June 4, 2018</date></p>
+<p><date>Monday, June 11, 2018</date></p>
 
 <h2 id="lecture-videos">Lecture Videos</h2>
 
 <p>Morning:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;amp=&amp;t=0s&amp;amp=&amp;index=2">Day 1, part 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=n-lJN7LcgfM&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp&amp;index=50">Day 5, Part 1</a></li>
 </ul>
 
 <p>Afternoon:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | <a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;amp=&amp;t=0s&amp;amp=&amp;index=2">Day 1, part 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | [Day 5, Part 1]()</li>
 </ul>
 
 <h2 id="topics">Topics</h2>
 
-<ul>
-<li>History of JavaScript and the Web</li>
-<li>Getting the most out of a coding bootcamp</li>
-<li>Starting a project with git</li>
-<li>Anatomy of an HTML element (<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">tags</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes">attributes</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">text content</a>)</li>
-<li>Basic CSS selector syntax
+<h3 id="es2015-es6">ES2015+ (ES6+)</h3>
 
 <ul>
-<li>Element name (<code>div</code>, <code>h1</code>, <code>p</code>, etc.)</li>
-<li>Element ID (<code>#theID</code>, <code>div#theID</code>, etc.)</li>
-<li>Class name (<code>.theClass</code>, <code>p.theClass</code>, etc.)</li>
+<li>Modules (import/export) - <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules">ES2015 modules on Babel</a></li>
+</ul>
+
+<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+
+<ul>
+<li><a href="https://tylermcginnis.com/imperative-vs-declarative-programming/">Imperative vs. Declarative</a></li>
+<li>Components
+
+<ul>
+<li>JSX - <a href="https://facebook.github.io/react/docs/introducing-jsx.html">Docs: Introducing JSX</a></li>
+<li>Props - <a href="https://facebook.github.io/react/docs/components-and-props.html">Docs: Components and Props</a></li>
+<li>State - <a href="https://facebook.github.io/react/docs/state-and-lifecycle.html">Docs: State and Lifecycle</a></li>
 </ul></li>
 </ul>
 
 <h2 id="examples">Examples</h2>
 
-<h3 id="git">Git</h3>
+<h3 id="react">React</h3>
 
-<h4 id="starting-a-new-project-with-a-git-repository">Starting a new project with a git repository</h4>
+<h4 id="basic-app">Basic App</h4>
 
-<p>First make a new directory and then navigate into the new directory.  Then start a new repository with <code>git init</code>.</p>
+<p>A basic React application requires a minimum of four things:</p>
 
+<ol>
+<li>An HTML file with at least one empty element</li>
+<li>The React library</li>
+<li>One or more React Component(s)</li>
+<li>A JavaScript call to attach the React Component to the empty element in step one</li>
+</ol>
 
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>mkdir my_new_project
-cd my_new_project
-git init
-</span></pre>
-
-</div>
-</div>
-
-<p>To be able to make our first commit, we need to first add something to our empty project folder.  A common first choice is a <code>README.md</code> file, which is a document written in <a href="https://guides.github.com/features/mastering-markdown/">markdown</a> that provides information about the project.</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>echo &#34;# My New Project&#34; &gt;&gt; README.md
-git add .
-git commit -m &#34;Initial commit&#34;
-</span></pre>
-
-</div>
-</div>
-
-<p>Once we have our first commit, we can add a &lsquo;remote&rsquo; for our repository, like <a href="https://github.com">github</a> or <a href="https://bitbucket.org/">bitbucket</a>.  For github, log in to github.com, then hit the &lsquo;+&rsquo; button in the top right of the screen to add a new repository.  Then, it will give you the following commands to run from the command line.</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span></span>git remote add origin git@github.com:myusername/my_new_project.git
-git push -u origin master
-</span></pre>
-
-</div>
-</div>
-
-<p>This adds the github remote as &lsquo;origin&rsquo; and sets it as the default for when you push your changes.  From this point forward, just type <code>git push</code> to push your changes to the remote.</p>
-
-<h3 id="dom-manipulation">DOM Manipulation</h3>
+<p>A minimal example:</p>
 
 
 <pre class="line-numbers language-html" rel="html">
 <code class="language-html">
 
-&lt;div class=&quot;person&quot;&gt;
-  &lt;h2 id=&quot;firstName&quot;>Han&lt;/h2&gt;
-  &lt;h2 id=&quot;lastName&quot;>Solo&lt;/h2&gt;
-  &lt;p>Made the Kessel Run in less than 12 parsecs&lt;/p&gt;
-  &lt;button>Click here to hire me!&lt;/button&gt;
-&lt;/div&gt;
+&lt;-- index.html --&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Basic React App&lt;/title&gt;
+    &lt;script src=&quot;App.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;app&quot;&gt;&lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 
 </code>
 </pre>
@@ -1051,23 +959,168 @@ git push -u origin master
 
 
 
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
 
-// Get all h2 elements with querySelectorAll. Returns a NodeList
-const headings = document.querySelectorAll('.person h2')
-console.log(headings)     // [h2#firstName, h2#lastName]
+// App.js
+class App extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    )
+  }
+}
 
-// Get a single element with querySelector
-const heading = document.querySelector('.person h2')
-console.log(heading)      // h2#firstName
+ReactDOM.render(&lt;App /&gt;, document.querySelector('#app'))
 
-// Do something when a click event occurs
-const button = document.querySelector('button')
-button.addEventListener('click', (ev) => {
-  alert('clicked!')
-  console.log(ev.target)  // button
-})
+</code>
+</pre>
+
+
+
+<p>The body of the HTML above contains only an empty <code>div</code> with an id of &lsquo;app&rsquo;.  This is where we will tell React to render our app. The <code>App.js</code> file defines the <code>App</code> component, and also makes the call to <code>ReactDOM.render</code>, which attaches <code>&lt;App /&gt;</code> to the <code>div#app</code> element.</p>
+
+<p>React will &lsquo;fill in&rsquo; the div with the return result of the <code>App</code> component&rsquo;s <code>render</code> method, in this case, the markup <code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code>.</p>
+
+<h4 id="props">Props</h4>
+
+<p>React components can be thought of as JavaScript functions.  They take in arguments, called <code>props</code>, and return markup that gets rendered to the page. Props can be just about anything, including strings, booleans, functions, objects, etc&hellip;</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class App extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;
+    )
+  }
+}
+
+&lt;App name=&quot;Bob&quot; /&gt;
+
+</code>
+</pre>
+
+
+
+<p>By passing in the string <code>&quot;Bob&quot;</code> to the <code>App</code> component, we can access that value from within the <code>App</code> class as a property on <code>this.props</code>.</p>
+
+<p>Our rendered output would then be:</p>
+
+
+<pre class="line-numbers language-html" rel="html">
+<code class="language-html">
+
+&lt;h1&gt;Hello, Bob!&lt;/h1&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="state">State</h4>
+
+<p>Components receive <em>props</em> as arguments and cannot change their values. Data that needs to change belongs in <em>state</em>.</p>
+
+<p>State should be initialized in the constructor and updated via <code>setState</code>.</p>
+
+
+  <div class="aside aside-danger">
+  
+    <h4>Do</h4>
+    
+      <div class="emoji">
+        <i class="fa fa-Not"></i>
+      </div>
+    
+  
+  <div class="body">
+  <p>Always use <code>setState</code> to modify a component&rsquo;s state. The only time you should set state directly is in the constructor.</p>
+
+  </div>
+</div>
+
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      count: 0
+    }
+  }
+
+  increment(ev) {
+    count = this.state.count + 1
+    this.setState({ count })
+  }
+
+  render() {
+    return (
+      &lt;button type="button" onClick={this.increment.bind(this)}&gt;
+        Click to Increment
+      &lt;/button&gt;
+      &lt;p&gt;
+        Button has been clicked {this.state.count} times
+      &lt;p&gt;
+    )
+  }
+}
+
+&lt;App /&gt;
+
+</code>
+</pre>
+
+
+
+<h4 id="modules">Modules</h4>
+
+<p>With <a href="https://babeljs.io/learn-es2015/#ecmascript-2015-features-modules">modules</a>, you can define each component in separate files, importing them as needed.</p>
+
+<p><strong>Header.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Header extends React.Component {
+  render() {
+    return (
+      &lt;h1&gt;Hello, {this.props.name}!&lt;/h1&gt;
+    )
+  }
+}
+
+export default Header
+
+</code>
+</pre>
+
+
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import Header from './Header'
+
+class App extends React.Component {
+  render() {
+    return (
+      &lt;Header name=&quot;Bob&quot; /&gt;
+    )
+  }
+}
+
+export default App
 
 </code>
 </pre>
@@ -1077,50 +1130,48 @@ button.addEventListener('click', (ev) => {
 <h2 id="presentations">Presentations</h2>
 
 <ul>
-<li><a target="_blank" href="/history-of-the-web.pdf">JavaScript History</a></li>
-<li><a target="_blank" href="/bootcamp-tips-expectations.pdf">Bootcamp Expectations and Tips for Success</a></li>
-</ul>
-
-<h2 id="links">Links</h2>
-
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network (MDN)</a> - An excellent documentation and learning resource for all your HTML/CSS/JS needs</li>
+<li><a target="_blank" href="/intro-to-react.pdf">Intro to React</a></li>
 </ul>
 
 <h2 id="projects">Projects</h2>
 
-<h3 id="first-js">First JS</h3>
-
-<p><a href="https://codepen.io/dstrus/pen/eKJaYZ">Morning</a> | <a href="https://codepen.io/dstrus/professor/oyxXBE/">Afternoon</a></p>
-
-<h3 id="spellbook">Spellbook</h3>
-
-<p><a href="https://github.com/xtbc18s2/spellbook">Morning</a> | <a href="https://github.com/xtbc18s2/spellbook/tree/afternoon">Afternoon</a></p>
+<ul>
+<li>Reactrobats on CodePen: <a href="https://codepen.io/dstrus/professor/XYMVpg/">Morning</a> | [Afternoon]()</li>
+<li><a href="https://github.com/xtbc18s2/dwarf-underground">Dwarf-Underground (Original)</a></li>
+<li>Dwarf-Underground (Edited, with React Components): <a href="https://github.com/xtbc18s2/dwarf-morning">Morning</a> | [Afternoon]()</li>
+</ul>
 
 <h2 id="homework">Homework</h2>
 
+<h3 id="basic-requirements">Basic Requirements</h3>
+
 <ul>
-<li>Make the button change the text of the heading (the <code>&lt;h1&gt;</code>).</li>
+<li>Split the page into at least 6 total components</li>
 </ul>
 
-<h2 id="bonus-credit">Bonus Credit</h2>
+<h3 id="bonus-credit">Bonus Credit</h3>
 
 <ul>
-<li>Add multiple headings to the page, and make the button change the <em>second</em> one. (Use a <code>class</code> or an <code>id</code>.)</li>
+<li>Split the page into at least 10 total components, including components <em>in</em> components</li>
 </ul>
 
-<h2 id="super-mega-bonus-credit">Super Mega Bonus Credit</h2>
+<h3 id="super-bonus-credit">Super Bonus Credit</h3>
 
 <ul>
-<li>Add a form to the page.</li>
-<li>Add a text input to the form.</li>
-<li>When the form is <em>submitted</em>, update the heading with the text that you type in the text input.</li>
+<li>Render the four article links at the bottom of the screen using <code>map</code> and passing in the props they need</li>
 </ul>
 
-<h2 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h2>
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
 
 <ul>
-<li>Make sure it works when you press <em>enter</em> on the keyboard, not just when you click the button.</li>
+<li>Make a component that contains a text field for leaving a comment</li>
+<li>Have the text field appear only when the &lsquo;comments&rsquo; link at the bottom of the article is clicked</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Actually display comments that are entered and submitted</li>
 </ul>
 
 
@@ -1579,7 +1630,6 @@ button.addEventListener('click', (ev) => {
             
                 
                     
-                    
                 
                 
 
@@ -1592,26 +1642,6 @@ button.addEventListener('click', (ev) => {
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1656,22 +1686,6 @@ button.addEventListener('click', (ev) => {
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
             
             
@@ -1691,6 +1705,40 @@ button.addEventListener('click', (ev) => {
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -1698,10 +1746,10 @@ button.addEventListener('click', (ev) => {
 
 
         
-            <a class="nav nav-prev" href="/week1/" title="Week I"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/week2/" title="Week II"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/week1/day2/" title="Day 2: Functions and The DOM" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/prereqs/" title="Prerequisites" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
