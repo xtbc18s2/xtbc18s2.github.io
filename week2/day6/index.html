@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Git :: Xtern Bootcamp 2018</title>
+    <title>Day 6: React :: Xtern Bootcamp 2018</title>
     
     
     <link href="/css/nucleus.css?1528819428" rel="stylesheet">
@@ -36,7 +36,7 @@
 <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-windows/git/">
+  <body class="" data-url="/week2/day6/">
     <nav id="sidebar" class="">
 
 
@@ -368,7 +368,7 @@
   
     
     <li data-nav-id="/setup-windows/" title="Setup for Windows" class="dd-item 
-        parent
+        
         
         
         ">
@@ -430,7 +430,7 @@
  
   
     
-      <li data-nav-id="/setup-windows/git/" title="Git" class="dd-item active">
+      <li data-nav-id="/setup-windows/git/" title="Git" class="dd-item ">
         <a href="/setup-windows/git/">
         Git
         
@@ -730,7 +730,7 @@
   
     
     <li data-nav-id="/week2/" title="Week II" class="dd-item 
-        
+        parent
         
         
         ">
@@ -773,7 +773,7 @@
  
   
     
-      <li data-nav-id="/week2/day6/" title="Day 6: React" class="dd-item ">
+      <li data-nav-id="/week2/day6/" title="Day 6: React" class="dd-item active">
         <a href="/week2/day6/">
         Day 6: React
         
@@ -839,7 +839,7 @@
             
           
           
-            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/setup-windows/'>Setup for Windows</a> > Git
+            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week2/'>Week II</a> > Day 6: React
           
          
           
@@ -855,8 +855,30 @@
 <ul>
 <li>
 <ul>
-<li><a href="#git-setup-options">Git Setup Options</a></li>
-<li><a href="#configuring-git">Configuring Git</a></li>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#react">React</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a>
+<ul>
+<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a>
+<ul>
+<li><a href="#create-react-app"><code>create-react-app</code></a></li>
+<li><a href="#lists-and-keys">Lists and Keys</a></li>
+<li><a href="#using-map-with-components">Using <code>map</code> with Components</a></li>
+<li><a href="#stateless-functional-components">Stateless Functional Components</a></li>
+</ul></li>
+<li><a href="#javascript-es6">JavaScript (ES6+)</a>
+<ul>
+<li><a href="#named-and-default-exports-and-imports">Named and default exports and imports</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -871,7 +893,7 @@
         
         <div id="body-inner">
           
-            <h1>Git</h1>
+            <h1>Day 6: React</h1>
           
 
         
@@ -879,153 +901,267 @@
 
 
 
-<div class="page-heading"><div>
+<p><date>Tuesday, June 12, 2018</date></p>
+
+<h2 id="lecture-videos">Lecture Videos</h2>
+
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=Dw3oJrY_UTI&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp&amp;index=62">Day 6, Part 1</a></li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | [Day 6, Part 1]()</li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="react">React</h3>
+
+<ul>
+<li><code>create-react-app</code></li>
+<li><a href="https://hackernoon.com/all-you-need-to-know-about-css-in-js-984a72d48ebc">CSS in JS</a></li>
+<li>Lists and Keys</li>
+<li>Using <code>map</code> with components</li>
+<li>Stateless Functional Components
+
+<ul>
+<li><a href="http://javascriptplayground.com/blog/2017/03/functional-stateless-components-react/">Stateless Functional Components in React</a></li>
+<li><a href="https://tylermcginnis.com/functional-components-vs-stateless-functional-components-vs-stateless-components/">Functional Components vs. Stateless Functional Components vs. Stateless Components</a></li>
+<li><a href="https://hackernoon.com/react-stateless-functional-components-nine-wins-you-might-have-overlooked-997b0d933dbc">Nine Wins You Might Have Overlooked</a></li>
+</ul></li>
+<li><a href="https://facebook.github.io/react/docs/forms.html">Controlled</a> vs <a href="https://facebook.github.io/react/docs/uncontrolled-components.html">Uncontrolled</a> Forms</li>
+<li><a href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/">Controlled and uncontrolled form inputs in React don&rsquo;t have to be complicated</a></li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+
+<h4 id="create-react-app"><code>create-react-app</code></h4>
+
+<ul>
+<li><a href="https://github.com/facebook/create-react-app">Documentation/README</a></li>
+</ul>
+
+<h4 id="lists-and-keys">Lists and Keys</h4>
+
+<ul>
+<li><a href="https://reactjs.org/docs/lists-and-keys.html">Key props on list items</a></li>
+</ul>
+
+<h4 id="using-map-with-components">Using <code>map</code> with Components</h4>
+
+<p><strong>Person.js</strong></p>
 
 
-<svg role="img" aria-labelledby="git-svg-title" id="git-logo-svg" data-name="git-logo-svg" xmlns="http://www.w3.org/2000/svg" width="218.37" height="91.21" viewBox="0 0 218.37 91.21">
-  <title id="git-svg-title">Git</title>
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-    </style>
-  </defs>
-  <title>git</title>
-  <path class="cls-1" d="M147.06,31.31a13.8,13.8,0,0,1,3.22,8.79c0,9.66-7.57,15.32-18.54,15.32a27.68,27.68,0,0,1-6.88-.78L122,59.25l8.53.52c15.06,1,23.93,1.4,23.93,13,0,10-8.79,15.67-23.93,15.67-15.75,0-21.76-4-21.76-10.88,0-3.92,1.74-6,4.79-8.88a5.8,5.8,0,0,1-3.83-5.74,7.8,7.8,0,0,1,2.53-5.31c1.57-1.65,3.31-3.31,5.39-5.22-4.26-2.09-7.48-6.61-7.48-13.06,0-10,6.61-16.88,19.93-16.88a29.86,29.86,0,0,1,8,.87h17v7.4ZM121.3,71c-1.13,1.39-2.26,2.87-2.26,4.61,0,3.48,4.44,4.53,10.53,4.53,5,0,11.92-.35,11.92-5,0-2.79-3.31-3-7.49-3.22Zm9.57-40c-4.79,0-8.35,2.35-8.35,8,0,4.26,2.35,7.22,8.1,7.22,4.87,0,8.18-2.87,8.18-7.4C138.79,33.75,135.83,31,130.87,31Z"/>
-  <path class="cls-1" d="M159.15,67.79V60.92l4.44-.61c1.22-.18,1.39-.44,1.39-1.74V33c0-1-.26-1.57-1.13-1.83l-4.7-1.66,1-7h18V58.57c0,1.39.08,1.57,1.39,1.74l4.44.61v6.87Zm11.23-52.3c-5,0-7.83-2.87-7.83-7.84S165.42,0,170.38,0s7.92,2.7,7.92,7.66S175.43,15.49,170.38,15.49Z"/>
-  <path class="cls-1" d="M218.37,64.42a34.81,34.81,0,0,1-14.19,3.48c-10.36,0-14.27-4.17-14.27-14V31.09c0-.52,0-.87-.7-.87h-6.09V22.47c7.66-.87,10.71-4.7,11.66-14.19h8.27V20.64c0,.61,0,.87.7.87H216v8.7h-13V51c0,5.14,1.22,7.14,5.92,7.14a20.72,20.72,0,0,0,7-1.39Z"/>
-  <path class="cls-1" d="M89.42,41.58,49.63,1.79a5.87,5.87,0,0,0-8.3,0l-8.26,8.26L43.55,20.54a7,7,0,0,1,8.83,8.89l10.1,10.1a7,7,0,1,1-4.18,3.94L48.87,34V58.83a7,7,0,1,1-5.74-.2v-25a6.91,6.91,0,0,1-2.29-1.52,7,7,0,0,1-1.5-7.64L29,14.11,1.72,41.4a5.87,5.87,0,0,0,0,8.3L41.51,89.49a5.87,5.87,0,0,0,8.3,0L89.42,49.88A5.87,5.87,0,0,0,89.42,41.58Z"/>
-</svg>
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Person extends React.Component {
+  render() {
+    return (
+      &lt;li&gt;Hello, {this.props.person.name}!&lt;/li&gt;
+    )
+  }
+}
+
+export default Person
+
+</code>
+</pre>
 
 
 
-for Windows
-
-</div></div>
-
-<p>Git is a distributed version control system. (But you knew that already, because you totally completed a <a href="/prereqs/git/">Git tutorial</a>&mdash;<em>right</em>?)</p>
-
-<p>There are several ways to go about making Git usable on Windows, but my favorite is to install the aptly-named <strong><a href="https://git-for-windows.github.io/">Git for Windows</a></strong>. The great thing about Git for Windows is that it comes with <strong>Git Bash</strong>&mdash;a UNIX-style shell.</p>
-
-<div class="download">
-<a href="https://git-for-windows.github.io/"><i class="fa fa-download"></i> Download Git for Windows</a>
-</div>
+<p><strong>PersonList.js</strong></p>
 
 
-  <div class="aside aside-danger">
-  
-    <h4>Get the right Git</h4>
-    
-  
-  <div class="body">
-  <p>Please note that this is <strong>not</strong> the same Git for Windows that you&rsquo;ll find on git-scm.com.</p>
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
 
-  </div>
-</div>
+import Person from './Person'
+
+class PersonList extends React.Component {
+  render() {
+    const people = [
+      { name: 'Dana', hair: 'blonde' },
+      { name: 'Nichole', hair: 'long' },
+      { name: 'Davey', hair: 'long gone' }
+    ]
+    return (
+      &lt;div&gt;
+        &lt;h2&gt;People&lt;/h2&gt;
+        {
+          people.map((person => &lt;Person person={person} /&gt;))
+        }
+      &lt;/div&gt;
+    )
+  }
+}
+
+export default PersonList
+
+</code>
+</pre>
+
+
+
+<h4 id="stateless-functional-components">Stateless Functional Components</h4>
+
+<p>Not every React Component needs to have state.  Many simply render a bit of <code>props</code> and UI.  For such components, we don&rsquo;t need to instantiate a whole class that inherits from <code>React.Component</code>, we can simply write a function that accepts <code>props</code> as an argument and returns the markup we need.</p>
+
+<p>For instance, in the previous example, the <code>Person</code> component can easily be re-written as a Stateless Functional Component.</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+function Person (props) {
+  return (
+    &lt;li&gt;Hello, {props.person.name}!&lt;/li&gt;
+  )
+}
+
+// Or...
+
+const Person = (props) => &lt;li&gt;Hello, {props.person.name}!&lt;/li&gt;
+
+</code>
+</pre>
+
+
+
+<h3 id="javascript-es6">JavaScript (ES6+)</h3>
+
+<h4 id="named-and-default-exports-and-imports">Named and default exports and imports</h4>
+
+<p>Prior to ES6, there were many competing ways to export and import JavaScript modules.  The most common were <a href="https://webpack.github.io/docs/commonjs.html">CommonJS</a> and <a href="http://requirejs.org/docs/whyamd.html">AMD</a>.  Luckily ES6 defined a specification for standardizing module export and import.</p>
+
+<p>There are two types of exports from any JS file - <em>named</em> and <em>default</em>.  The important thing to remember is that there can only be <em>one</em> default export per module, but there can be as many named exports as you want.</p>
+
+<p><strong>myModule.js</strong>
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+export const myNumber = 8
+
+export function sayHi () {
+  console.log('hello')
+}
+
+export default class MyClass {
+  add (a, b) {
+    return a + b
+  }
+}
+
+</code>
+</pre>
+
+</p>
+
+<p>The main difference is how they are imported.  Default exports get the most concise syntax:</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import MyClass from 'myModule'
+
+const classInstance = new MyClass()
+classInstance.add(1, 2) // => 3
+
+</code>
+</pre>
+
 
 
 
   <div class="aside aside-info">
   
-    <h4>GitHub Desktop</h4>
-    
-      <div class="emoji">
-        <i class="fa fa-github-alt"></i>
-      </div>
+    <h4>Default import naming</h4>
     
   
   <div class="body">
-  <p><strong><a href="https://desktop.github.com/">GitHub Desktop</a></strong> is a very nice, free graphical interface for Git. Although we&rsquo;ll use Git from the command-line a great deal, we&rsquo;ll also look at how GitHub Desktop can make certain tasks easier.</p>
+  <p>Since there can be only one default export per module, the name by which you import the default export is not important - you can name it whatever you want.  For instance, instead of importing as <code>MyClass</code>, we could have said <code>import LuftBallons from 'myModule'</code>, and it would have worked just fine.  To read more about default and named exports, click <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export">here</a>.</p>
 
   </div>
 </div>
 
 
-<h2 id="git-setup-options">Git Setup Options</h2>
+<p>Named exports get a slightly more verbose syntax for importing, and the names <em>are</em> important (otherwise it can&rsquo;t determine what you want to import).</p>
 
-<p>You&rsquo;ll have a few choices to make during the setup process.</p>
 
-<p><strong>Adjusting your PATH environment</strong>:
-The second option is probably best: <em>Use Git from the Windows Command Prompt</em>. With this option, you&rsquo;ll be able to use Git commands from the regular Windows command line, should you choose to.</p>
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
 
-<div class="img git-win-01-path"><span>Choose <strong>Use Git from the Windows Command Prompt</strong></span></div>
+import { myNumber, sayHi } from 'myModule'
 
-<p><strong>Choosing HTTPS transport backend</strong>:
-Select the first option: <em>Use the OpenSSL library</em>.</p>
+console.log(myNumber) // => 8
 
-<div class="img git-win-02-https"><span>Choose <strong>Use the OpenSSL library</strong></span></div>
+sayHi() // => 'hello'
 
-<p><strong>Configuring the line ending conversions</strong>:
-Select the second option: <em>Checkout as-is, commit Unix-style line endings</em>.</p>
-
-<div class="img git-win-03-line-endings"><span>Choose <strong>Checkout as-is, commit Unix-style line endings</strong></span></div>
-
-<p><strong>Configuring the terminal emulator to use with Git Bash</strong>:
-You&rsquo;ll install a different terminal emulator shortly, so your choice here is inconsequential. Just go with the first option: <em>Use MinTTY (the default terminal of MSYS2)</em>.</p>
-
-<div class="img git-win-04-terminal"><span>Choose <strong>Use MinTTY (the default terminal of MSYS2)</strong></span></div>
-
-<p><strong>Configuring extra options</strong>:
-The defaults here are fine.</p>
-
-<div class="img git-win-05-extras"><span>Leave the default selections on.</span></div>
-
-<h2 id="configuring-git">Configuring Git</h2>
-
-<p>Next, tell Git what name and email address it should use to sign code that you&rsquo;ve authored. While you&rsquo;re at it, tell it to use Code as the editor. Setup should have created a <strong>Git Bash</strong> shortcut. Launch Git Bash, and enter the following commands, substituting your actual name and email address:</p>
+</code>
+</pre>
 
 
 
+<p>If you need to import a named export under a different name&mdash;if, for example, you have another import or local variable with the same name&mdash;you can specifiy a different name using <em>as</em>.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+import { myNumber as num, sayHi as yo } from 'myModule'
+
+console.log(num) // => 8
+
+yo() // => 'hello'
+
+</code>
+</pre>
 
 
 
-
-  
-  
+<p>You can also combine default and named imports in the same line.</p>
 
 
-<div class="shell windows">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  WINGW64:/c/Users/user
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
 
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span><span data-prompt="$"></span><span data-prompt="$"></span></span>git config --global user.name &#34;Your Full Name&#34;
-git config --global user.email &#34;youremailaddress@example.com&#34;
-git config --global core.editor &#34;code --wait&#34;
-</span></pre>
+import MyClass, { myNumber, sayHi } from 'myModule'
 
-</div>
-</div>
+</code>
+</pre>
 
 
-  <div class="aside aside-info">
-  
-    <h4>$ _</h4>
-    
-  
-  <div class="body">
-  <p>Git Bash will present a command prompt, indicated by <code>$</code>. We&rsquo;ll generally prefix terminal commands with that symbol in our documentation. You&rsquo;re not meant to type the <code>$</code> character, and it won&rsquo;t be included if you copy and paste the commands from this site.</p>
 
-  </div>
-</div>
+<h2 id="projects">Projects</h2>
 
+<ul>
+<li>Chatarang: <a href="https://github.com/xtbc18s2/chatarang">Morning</a> | [Afternoon]()</li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>Create and style more components, based on the <code>chat-static</code> content. There should be approximately one CSS file per component.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Make a <code>SignIn</code> component with a form that takes a user name.</li>
+<li>When the form is submitted, save that user in the <code>state</code> of the <code>App</code> component.</li>
+<li>When <code>state.user</code> is not set, show the <code>SignIn</code> component.</li>
+<li>When <code>state.user</code> is set, show the <code>Main</code> component.</li>
+</ul>
+
+<p><em>Hint</em>: You need to figure out how to do <strong>conditional rendering</strong>.</p>
 
 
 <footer class=" footline" >
@@ -1291,7 +1427,6 @@ git config --global core.editor &#34;code --wait&#34;
             
                 
                     
-                    
                 
                 
 
@@ -1305,8 +1440,21 @@ git config --global core.editor &#34;code --wait&#34;
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
                         
-                        
+            
+            
+                
                     
                 
                 
@@ -1339,26 +1487,6 @@ git config --global core.editor &#34;code --wait&#34;
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -1571,6 +1699,7 @@ git config --global core.editor &#34;code --wait&#34;
             
                 
                     
+                    
                 
                 
 
@@ -1584,6 +1713,9 @@ git config --global core.editor &#34;code --wait&#34;
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -1600,6 +1732,7 @@ git config --global core.editor &#34;code --wait&#34;
             
                 
                     
+                    
                 
                 
 
@@ -1621,10 +1754,10 @@ git config --global core.editor &#34;code --wait&#34;
 
 
         
-            <a class="nav nav-prev" href="/setup-windows/editor/" title="Editor"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/week2/day5/" title="Day 5: Intro to React"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/setup-windows/terminal/" title="Terminal" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/week2/day5/" title="Day 5: Intro to React" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
