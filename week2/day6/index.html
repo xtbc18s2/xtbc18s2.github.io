@@ -12,17 +12,17 @@
     <title>Day 6: React :: Xtern Bootcamp 2018</title>
     
     
-    <link href="/css/nucleus.css?1528829314" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1528829314" rel="stylesheet">
-    <link href="/css/hybrid.css?1528829314" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1528829314" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1528829314" rel="stylesheet">
-    <link href="/css/auto-complete.css?1528829314" rel="stylesheet">
-    <link href="/css/theme.css?1528829314" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1528829314" rel="stylesheet">
+    <link href="/css/nucleus.css?1528833236" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1528833236" rel="stylesheet">
+    <link href="/css/hybrid.css?1528833236" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1528833236" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1528833236" rel="stylesheet">
+    <link href="/css/auto-complete.css?1528833236" rel="stylesheet">
+    <link href="/css/theme.css?1528833236" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1528833236" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1528829314"></script>
+    <script src="/js/jquery-2.x.min.js?1528833236"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -52,14 +52,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1528829314"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1528829314"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1528833236"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1528833236"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="/js/search.js?1528829314"></script>
+<script type="text/javascript" src="/js/search.js?1528833236"></script>
 
     
   </div>
@@ -872,6 +872,8 @@
 <li><a href="#javascript-es6">JavaScript (ES6+)</a>
 <ul>
 <li><a href="#named-and-default-exports-and-imports">Named and default exports and imports</a></li>
+<li><a href="#property-initializers">Property initializers</a></li>
+<li><a href="#property-initializers-arrow-functions">Property initializers + arrow functions</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#projects">Projects</a></li>
@@ -935,6 +937,7 @@
 </ul></li>
 <li><a href="https://facebook.github.io/react/docs/forms.html">Controlled</a> vs <a href="https://facebook.github.io/react/docs/uncontrolled-components.html">Uncontrolled</a> Forms</li>
 <li><a href="https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/">Controlled and uncontrolled form inputs in React don&rsquo;t have to be complicated</a></li>
+<li>Property initializers (and arrow functions)</li>
 </ul>
 
 <h2 id="examples">Examples</h2>
@@ -1134,6 +1137,89 @@ yo() // => 'hello'
 <code class="language-js">
 
 import MyClass, { myNumber, sayHi } from 'myModule'
+
+</code>
+</pre>
+
+
+
+<h4 id="property-initializers">Property initializers</h4>
+
+
+  <div class="aside aside-info">
+  
+    <h4>Subject to minor changes</h4>
+    
+  
+  <div class="body">
+  <p><a href="https://github.com/tc39/proposal-class-public-fields">Property initializers</a> are a <a href="https://tc39.github.io/process-document/">Stage 3 proposal</a> for ECMAScript, meaning that they&rsquo;re a candidate, but requires further refinement and feedback from implementations and users before it becomes part of the standard. Facebook itself is already using these techniques in production, however.</p>
+
+  </div>
+</div>
+
+
+<p>From the proposal:</p>
+
+<blockquote>
+<p>&ldquo;Class instance fields&rdquo; describe properties intended to exist on instances of a class (and may optionally include initializer expressions for said properties).</p>
+</blockquote>
+
+<p>We can take advantage of this in React.</p>
+
+<p><a href="https://babeljs.io/blog/2015/06/07/react-on-es6-plus"><strong>Read more: Using ES7 property initializers in React</strong></a></p>
+
+<p>We can use a property initializer to set the initial value of state without writing a constructor:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Song extends React.Component {
+  state = {
+    versesRemaining: 5,
+  }
+}
+
+</code>
+</pre>
+
+
+
+<p>We can even set default props and use those in the initial state:</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Song extends React.Component {
+  static defaultProps = {
+    autoPlay: false,
+    verseCount: 10,
+  }
+  state = {
+    versesRemaining: this.props.verseCount,
+  }
+}
+
+</code>
+</pre>
+
+
+
+<h4 id="property-initializers-arrow-functions">Property initializers + arrow functions</h4>
+
+<p>Combining property initializers and arrow functions gives us a convenient way to auto-bind <code>this</code>, since arrow functions inherit <code>this</code> from the scope in which they are declared (lexical scoping):</p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+class Something extends React.Component {
+  handleButtonClick = (ev) => {
+    // `this` is bound correctly!
+    this.setState({ buttonWasClicked: true });
+  }
+}
 
 </code>
 </pre>
@@ -1766,20 +1852,20 @@ import MyClass, { myNumber, sayHi } from 'myModule'
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1528829314"></script>
-    <script src="/js/perfect-scrollbar.min.js?1528829314"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1528829314"></script>
-    <script src="/js/jquery.sticky.js?1528829314"></script>
-    <script src="/js/featherlight.min.js?1528829314"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1528829314"></script>
-    <script src="/js/highlight.pack.js?1528829314"></script>
+    <script src="/js/clipboard.min.js?1528833236"></script>
+    <script src="/js/perfect-scrollbar.min.js?1528833236"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1528833236"></script>
+    <script src="/js/jquery.sticky.js?1528833236"></script>
+    <script src="/js/featherlight.min.js?1528833236"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1528833236"></script>
+    <script src="/js/highlight.pack.js?1528833236"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1528829314"></script>
-    <script src="/js/learn.js?1528829314"></script>
-    <script src="/js/hugo-learn.js?1528829314"></script>
+    <script src="/js/modernizr.custom.71422.js?1528833236"></script>
+    <script src="/js/learn.js?1528833236"></script>
+    <script src="/js/hugo-learn.js?1528833236"></script>
 
-    <link href="/mermaid/mermaid.css?1528829314" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1528829314"></script>
+    <link href="/mermaid/mermaid.css?1528833236" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1528833236"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
