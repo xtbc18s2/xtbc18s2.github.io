@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>JavaScript :: Xtern Bootcamp 2018</title>
+    <title>Day 7: React Components &amp; Firebase :: Xtern Bootcamp 2018</title>
     
     
     <link href="/css/nucleus.css?1528910337" rel="stylesheet">
@@ -36,7 +36,7 @@
 <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/prereqs/javascript/">
+  <body class="" data-url="/week2/day7/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/prereqs/" title="Prerequisites" class="dd-item 
-        parent
+        
         
         
         ">
@@ -138,7 +138,7 @@
  
   
     
-      <li data-nav-id="/prereqs/javascript/" title="JavaScript" class="dd-item active">
+      <li data-nav-id="/prereqs/javascript/" title="JavaScript" class="dd-item ">
         <a href="/prereqs/javascript/">
         JavaScript
         
@@ -730,7 +730,7 @@
   
     
     <li data-nav-id="/week2/" title="Week II" class="dd-item 
-        
+        parent
         
         
         ">
@@ -792,7 +792,7 @@
  
   
     
-      <li data-nav-id="/week2/day7/" title="Day 7: React Components &amp; Firebase" class="dd-item ">
+      <li data-nav-id="/week2/day7/" title="Day 7: React Components &amp; Firebase" class="dd-item active">
         <a href="/week2/day7/">
         Day 7: React Components &amp; Firebase
         
@@ -858,7 +858,7 @@
             
           
           
-            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/prereqs/'>Prerequisites</a> > JavaScript
+            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week2/'>Week II</a> > Day 7: React Components & Firebase
           
          
           
@@ -874,13 +874,30 @@
 <ul>
 <li>
 <ul>
-<li><a href="#basic">Basic</a>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#learn-javascript-by-codecademy">Learn JavaScript by Codecademy</a></li>
+<li><a href="#react">React</a></li>
+<li><a href="#javascript">JavaScript</a></li>
+<li><a href="#firebase">Firebase</a></li>
 </ul></li>
-<li><a href="#intermediate">Intermediate</a>
+<li><a href="#examples">Examples</a>
 <ul>
-<li><a href="#javascript-30-by-wes-bos">JavaScript 30 by Wes Bos</a></li>
+<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a>
+<ul>
+<li><a href="#methods-as-props">Methods as props</a></li>
+<li><a href="#the-component-lifecycle">The Component Lifecycle</a></li>
+</ul></li>
+<li><a href="#javascript-es6">JavaScript (ES6+)</a>
+<ul>
+<li><a href="#destructuring-assignment">Destructuring assignment</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -896,7 +913,7 @@
         
         <div id="body-inner">
           
-            <h1>JavaScript</h1>
+            <h1>Day 7: React Components &amp; Firebase</h1>
           
 
         
@@ -904,19 +921,153 @@
 
 
 
-<p>React is a JavaScript library, so it&rsquo;s fair to say that we&rsquo;ll be using a whole heck of a lot of JavaScript in this bootcamp. You ought to be familiar with the fundamentals of JavaScript before class begins.</p>
+<p><date>Wednesday, June 13, 2018</date></p>
 
-<h2 id="basic">Basic</h2>
+<h2 id="lecture-videos">Lecture Videos</h2>
 
-<h3 id="learn-javascript-by-codecademy">Learn JavaScript by Codecademy</h3>
+<p>Morning:</p>
 
-<p><a href="https://www.codecademy.com/learn/learn-javascript">Learn JavaScript</a> is another free, interactive tutorial that replaced an older Codecademy course.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=KCk5Hiq-jrs&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp&amp;index=81">Day 7, Part 1</a></li>
+</ul>
 
-<h2 id="intermediate">Intermediate</h2>
+<p>Afternoon:</p>
 
-<h3 id="javascript-30-by-wes-bos">JavaScript 30 by Wes Bos</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | [Day 7, Part 1]()</li>
+</ul>
 
-<p>I highly recommend completing <a href="https://javascript30.com/">JavaScript 30</a> by Wes Bos. It&rsquo;s a series of thirty 20-minute videos, meant to be completed over the course of 30 days. That will take some planning on your part, obviously; you can&rsquo;t wait until the last second to dive into this stuff. But it&rsquo;s not a huge daily time commitment, and it will help a great deal.</p>
+<h2 id="topics">Topics</h2>
+
+<h3 id="react">React</h3>
+
+<ul>
+<li>Methods as props</li>
+<li><a href="https://reactjs.org/docs/conditional-rendering.html#___gatsby">Conditional Rendering</a></li>
+<li>The Component Lifecycle</li>
+<li><a href="https://react-cn.github.io/react/tips/if-else-in-JSX.html">If-Else in JSX</a></li>
+</ul>
+
+<h3 id="javascript">JavaScript</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">Spread operator</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">Ternary operators</a></li>
+</ul>
+
+<h3 id="firebase">Firebase</h3>
+
+<ul>
+<li><a href="https://firebase.google.com/">Firebase</a></li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+
+<h4 id="methods-as-props">Methods as props</h4>
+
+<p>Sometimes one component needs to update another component&rsquo;s state. It can&rsquo;t do that directly, but it can call a method from that other component if it&rsquo;s available via a prop.</p>
+
+
+  <pre class="language-jsx line-numbers "
+       
+       
+       data-line="5,23"
+       rel="jsx"
+  ><code class="language-jsx">
+  
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+const PartyButton = ({ celebrate, celebrations }) =&gt; {
+  return &lt;button onClick={celebrate}&gt;Party! {celebrations}&lt;/button&gt;
+}
+
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      celebrations: 0,
+    }
+    this.celebrate = this.celebrate.bind(this)
+  }
+
+  celebrate() {
+    const celebrations = this.state.celebrations + 1
+    this.setState({ celebrations })
+  }
+
+  render() {
+    return &lt;PartyButton celebrate={this.celebrate} celebrations={this.state.celebrations} /&gt;
+  }
+}
+
+ReactDOM.render(&lt;App /&gt;, document.querySelector('main'))
+
+  </code>
+  </pre>
+
+
+
+<h4 id="the-component-lifecycle">The Component Lifecycle</h4>
+
+<ul>
+<li><a href="https://reactjs.org/docs/react-component.html#the-component-lifecycle">React.Component</a></li>
+<li><a href="https://reactjs.org/docs/state-and-lifecycle.html">State and Lifecycle</a></li>
+</ul>
+
+<h3 id="javascript-es6">JavaScript (ES6+)</h3>
+
+<h4 id="destructuring-assignment">Destructuring assignment</h4>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a> syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+const myObj = {
+  a: true,
+  b: 'Destructuring!'
+}
+
+let { a, b } = myObj
+
+console.log(a) // => true
+console.log(b) // => 'Destructuring!'
+
+</code>
+</pre>
+
+
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li>Chatarang: <a href="https://github.com/xtbc18s2/chatarang">Morning</a> | <a href="https://github.com/xtbc18s2/chatarang/tree/afternoon">Afternoon</a></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li><p>Add support for multiple rooms/channels! <em>Hint</em>: The first argument (<code>endpoint</code>) to <code>base.syncState</code> should be different for each room/channel.</p></li>
+
+<li><p>Don&rsquo;t forget to make the sidebar links work!</p></li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Add direct messages too!</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Use Firebase authentication when signing in users. <em>Hint</em>: Google authentication is the easiest method.</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -955,20 +1106,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -979,125 +1116,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1371,22 +1389,6 @@
             
         
                     
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
                         
             
             
@@ -1518,6 +1520,155 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
             
         
         
@@ -1525,10 +1676,10 @@
 
 
         
-            <a class="nav nav-prev" href="/prereqs/html-css/" title="HTML &amp; CSS"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/week2/day6/" title="Day 6: React"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/prereqs/git/" title="Git" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/week2/day5/" title="Day 5: Intro to React" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
