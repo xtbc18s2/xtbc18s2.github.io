@@ -223,6 +223,18 @@ Lecture Videos Morning:
     </item>
     
     <item>
+      <title>Day 8: Firebase Authentication</title>
+      <link>http://xtbc18s2.github.io/week2/day8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://xtbc18s2.github.io/week2/day8/</guid>
+      <description>Thursday, June 14, 2018
+Morning:
+ Playlist | Day 8, Part 1  Afternoon:
+ Playlist | Day 8, Part 1  Topics Firebase Authentication  &amp;lsquo;firebase/auth&amp;rsquo; authWithPopup signing in and out handling auth state changes database rules  Examples Authentication Firebase isn&amp;rsquo;t just a real-time database. It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For Chatarang, we set up authentication via Google.</description>
+    </item>
+    
+    <item>
       <title>Git</title>
       <link>http://xtbc18s2.github.io/setup-mac/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Terminal :: Xtern Bootcamp 2018</title>
+    <title>Day 8: Firebase Authentication :: Xtern Bootcamp 2018</title>
     
     
     <link href="/css/nucleus.css?1529002374" rel="stylesheet">
@@ -36,7 +36,7 @@
 <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/setup-windows/terminal/">
+  <body class="" data-url="/week2/day8/">
     <nav id="sidebar" class="">
 
 
@@ -368,7 +368,7 @@
   
     
     <li data-nav-id="/setup-windows/" title="Setup for Windows" class="dd-item 
-        parent
+        
         
         
         ">
@@ -449,7 +449,7 @@
  
   
     
-      <li data-nav-id="/setup-windows/terminal/" title="Terminal" class="dd-item active">
+      <li data-nav-id="/setup-windows/terminal/" title="Terminal" class="dd-item ">
         <a href="/setup-windows/terminal/">
         Terminal
         
@@ -730,7 +730,7 @@
   
     
     <li data-nav-id="/week2/" title="Week II" class="dd-item 
-        
+        parent
         
         
         ">
@@ -811,7 +811,7 @@
  
   
     
-      <li data-nav-id="/week2/day8/" title="Day 8: Firebase Authentication" class="dd-item ">
+      <li data-nav-id="/week2/day8/" title="Day 8: Firebase Authentication" class="dd-item active">
         <a href="/week2/day8/">
         Day 8: Firebase Authentication
         
@@ -877,7 +877,7 @@
             
           
           
-            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/setup-windows/'>Setup for Windows</a> > Terminal
+            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week2/'>Week II</a> > Day 8: Firebase Authentication
           
          
           
@@ -893,9 +893,29 @@
 <ul>
 <li>
 <ul>
-<li><a href="#hyper">Hyper</a></li>
-<li><a href="#configuring-hyper-to-run-bash">Configuring Hyper to Run Bash</a></li>
-<li><a href="#environment-variables">Environment Variables</a></li>
+<li><a href="#topics">Topics</a>
+<ul>
+<li><a href="#firebase-authentication">Firebase Authentication</a></li>
+</ul></li>
+<li><a href="#examples">Examples</a></li>
+<li><a href="#authentication">Authentication</a>
+<ul>
+<li><a href="#step-1-enable-google-authentication-in-firebase">Step 1: Enable Google authentication in Firebase</a></li>
+<li><a href="#step-2-add-firebase-auth-to-your-app">Step 2: Add Firebase auth to your app</a></li>
+<li><a href="#step-3-set-up-the-signin-component">Step 3: Set up the SignIn Component</a></li>
+<li><a href="#step-4-handling-auth-state-changes-and-page-refreshes">Step 4: Handling auth state changes (and page refreshes)</a>
+<ul>
+<li><a href="#step-5-finishing-sign-in">Step 5: Finishing sign-in</a></li>
+<li><a href="#step-6-signing-out">Step 6: Signing out</a></li>
+</ul></li>
+<li><a href="#rules">Rules</a></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
+<li><a href="#super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -910,7 +930,7 @@
         
         <div id="body-inner">
           
-            <h1>Terminal</h1>
+            <h1>Day 8: Firebase Authentication</h1>
           
 
         
@@ -918,153 +938,301 @@
 
 
 
-<div class="page-heading"><div>
+<p><date>Thursday, June 14, 2018</date></p>
+
+<p>Morning:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=KhLMefiLrpM&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp&amp;index=97">Day 8, Part 1</a></li>
+</ul>
+
+<p>Afternoon:</p>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | <a href="https://www.youtube.com/watch?v=FGWi2B7jWKM&amp;index=102&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Day 8, Part 1</a></li>
+</ul>
+
+<h2 id="topics">Topics</h2>
+
+<h3 id="firebase-authentication">Firebase Authentication</h3>
+
+<ul>
+<li>&lsquo;firebase/auth&rsquo;</li>
+<li><code>authWithPopup</code></li>
+<li>signing in and out</li>
+<li>handling auth state changes</li>
+<li>database rules</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<h2 id="authentication">Authentication</h2>
+
+<p>Firebase isn&rsquo;t just a real-time database.  It can also provide authentication services via email/password, phone, or common third-party services like Github, Facebook, and Google. For <em>Chatarang</em>, we set up authentication via Google.</p>
+
+<h3 id="step-1-enable-google-authentication-in-firebase">Step 1: Enable Google authentication in Firebase</h3>
+
+<p>Go to your Firebase console and click on the &ldquo;Authentication&rdquo; tab in the &ldquo;Develop&rdquo; sidebar, then click on &ldquo;Sign-in method.&rdquo;  You&rsquo;ll see a list of the authentication methods allowed by Firebase. Click on &ldquo;Google&rdquo; and then enable with the toggle switch.</p>
+
+<h3 id="step-2-add-firebase-auth-to-your-app">Step 2: Add Firebase auth to your app</h3>
+
+<p><em>Note: This step assumes you already have your Firebase database added to your app.</em></p>
+
+<p>Import <code>firebase/auth</code> into your app&rsquo;s firebase setup.  Enable firebase auth and also create an instance of <code>GoogleAuthProvider</code>.</p>
+
+<p><strong>base.js</strong></p>
 
 
-<p><i class="fa fa-terminal"></i> terminal</p>
-
-
-</div></div>
-
-<p>You&rsquo;ll be using the command line a fair amount in class. We&rsquo;ll be demonstrating everything on macOS, which is UNIX-based. Now that you&rsquo;ve installed Git Bash, you too have a UNIX-like shell and can run the same commands.</p>
-
-<p>As noted during setup, Git Bash can run in the default <code>cmd.exe</code> terminal, but it also comes with MinTTY. If you&rsquo;re on Windows 10, <code>cmd.exe</code> isn&rsquo;t quite the inexcusable piece of crap that it used to be. At least the dang window is resizable now&mdash;that only took 25 @#$% years! It&rsquo;s still a bit of pain though, and MinTTY has problems of its own. So let&rsquo;s not use either one!</p>
-
-<h2 id="hyper">Hyper</h2>
-
-<p>Although it isn&rsquo;t strictly required, I highly recommend installing <strong><a href="https://hyper.is/">Hyper</a></strong>. It&rsquo;s a terminal client written in JavaScript, HTML, and CSS&mdash;and it&rsquo;s cross-platform! In fact, I&rsquo;ll be using the Mac version of Hyper in class.</p>
-
-<p>Aside from being what I use, Hyper is much easier to use and to customize than <code>cmd.exe</code>, and it doesn&rsquo;t have MinTTY&rsquo;s issues with running native Windows apps.</p>
-
-<div class="download">
-<a href="https://hyper.is/"><i class="fa fa-download"></i> Download Hyper</a>
-</div>
-
-<h2 id="configuring-hyper-to-run-bash">Configuring Hyper to Run Bash</h2>
-
-<p>Now we need to configure Hyper to run Git Bash when it starts. To do so, let&rsquo;s edit its configuration file. Launch <strong>Git Bash</strong> (<em>not</em> Hyper!), and run the following command:</p>
-
-
-
-
-
-
-
-  
-  
-
-
-<div class="shell windows">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  WINGW64:/c/Users/user
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span></span>code ~/.hyper.js
-</span></pre>
-
-</div>
-</div>
-
-<p>We need to change two settings: <em>shell</em> and <em>shellArgs</em>. Look for this section of the file, and make the changes shown on the highlighted lines:</p>
-
-
-  <pre class="language-js  "
+  <pre class="language-js line-numbers "
        
        
-       data-line="6,10"
+       data-line="4,17,18"
        rel="js"
   ><code class="language-js">
   
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    // make sure to use a full path if the binary name doesn't work
-    // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
-    // if you're using powershell, make sure to remove the `--login` below
-    shell: 'C:\\Program Files\\Git\\git-cmd.exe',
+import firebase from 'firebase/app'
+import Rebase from 're-base'
+import 'firebase/auth'
+import 'firebase/database'
 
-    // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
-    // by default ['--login'] will be used
-    shellArgs: ['--command=usr/bin/bash.exe', '-l', '-i'],
+const app = firebase.initializeApp({
+  apiKey: "YOURAPIKEY",
+  authDomain: "YOURAUTHDOMAIN",
+  databaseURL: "YOURDATABASEURL",
+  projectId: "YOURPROJECTID",
+  storageBucket: "YOURSTORAGEBUCKET",
+  messagingSenderId: "YOURSENDERID"
+})
 
-  </code>
-  </pre>
+const app = firebase.initializeApp(config)
 
+export const googleProvider = new firebase.auth.GoogleAuthProvider()
+export const auth = firebase.auth()
 
-
-<p>With that saved, you can quit Git Bash, and run Hyper, which will actually be running the Git Bash shell now. If you want to tweak more settings you can now run the <code>code ~/.hyper.js</code> command from Hyper. Feel free to poke around the preferences file for anything else you&rsquo;d like to tweak, such as font size.</p>
-
-<h2 id="environment-variables">Environment Variables</h2>
-
-<p>Things still aren&rsquo;t set up quite the way we want. Certain commands won&rsquo;t work quite right without another tweak, and we&rsquo;d like to set Visual Studio Code as the default editor. Set a couple of environment variables by issuing the following command:</p>
-
-
-
-
-
-
-
-
-<div class="shell macos">
-<div class="bar">
-  <div class="controls">
-    <div class="windows icon">
-      <img src="/images/git-bash.png" alt="">
-    </div>
-    <div class="dot red">
-    </div>
-    <div class="dot yellow">
-    </div>
-    <div class="dot green">
-    </div>
-  </div>
-  user@localhost ~
-  <div class="windows-controls">
-    &nbsp;
-  </div>
-</div>
-<div class="shell-body">
-
-<pre><span class="terminal-commands"
-><span class="command-line-prompt"><span data-prompt="$"></span></span>echo -e &#34;export TERM=cygwin\nexport EDITOR=code\n&#34; &gt; .bash_profile
-</span></pre>
-
-</div>
-</div>
-
-<p>This creates the file <code>.bash_profile</code> in your home directory, with the following contents:</p>
-
-
-  <pre class="language-bash line-numbers "
-       
-       
-       
-       rel=".bash_profile"
-  ><code class="language-bash">
-  
-export TERM=cygwin
-export EDITOR=code
-
+const db = app.database()
+export default Rebase.createClass(db)
 
   </code>
   </pre>
 
 
+
+<h3 id="step-3-set-up-the-signin-component">Step 3: Set up the SignIn Component</h3>
+
+<p>Import <code>auth</code> and the <code>googleProvider</code> into whatever component handles the sign-in process. Call <code>signInWithPopup</code> on the <code>auth</code> object, passing the provider as a parameter. This will launch a popup screen that will prompt the user to sign in using the provider you have specified.</p>
+
+<p><strong>SignIn.js</strong></p>
+
+
+<pre class="line-numbers language-jsx" rel="jsx">
+<code class="language-jsx">
+
+import React, { Component } from 'react'
+import { auth, googleProvider } from './base'
+
+class SignIn extends Component {
+  state = {
+    email: '',
+  }
+
+  authenticate = () => {
+    auth.signInWithPopup(googleProvider)
+      .then(result => this.props.handleAuth(result.user))
+      .catch(error => console.log(error))
+  }
+
+  render() {
+    return (
+      &lt;button className="SignIn" onClick={this.authenticate}&gt;
+        Sign In With Google
+      &lt;/button&gt;
+    )
+  }
+}
+
+export default SignIn
+
+</code>
+</pre>
+
+
+
+<h3 id="step-4-handling-auth-state-changes-and-page-refreshes">Step 4: Handling auth state changes (and page refreshes)</h3>
+
+<p>Once the user has authenticated via the popup, the state of our authorization has changed (we now have an authenticated user). Other events that can cause auth state changes are signing out, timeouts, and page refreshes.  We should probably set up something to listen for these events.  In the <code>componentWillMount</code> lifecycle hook that runs when the Component is first getting loaded, we can call the <code>onAuthStateChanged</code> method provided on the global <code>auth</code> object to set up such a listener.</p>
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// ...
+
+componentWillMount() {
+    const user = JSON.parse(localStorage.getItem('user'))
+
+    if (user) {
+      this.setState({ user })
+    }
+
+    auth.onAuthStateChanged(
+      user => {
+        if (user) {
+          this.handleAuth(user)
+        } else {
+          this.handleUnauth()
+        }
+      }
+    )
+  }
+
+// ...
+
+</code>
+</pre>
+
+
+
+<h4 id="step-5-finishing-sign-in">Step 5: Finishing sign-in</h4>
+
+<p>What the <code>authHandler</code> callback does is up to you, but for <em>Chatarang</em>, we had it do pretty typical things - save the user ID to state, and initialize syncing our local state for &lsquo;rooms&rsquo; with the data stored on Firebase.</p>
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// ...
+
+handleAuth = (oauthUser) => {
+    const user = {
+      email: oauthUser.email,
+      uid: oauthUser.uid,
+      displayName: oauthUser.displayName,
+    }
+    this.setState({ user })
+    localStorage.setItem('user', JSON.stringify(user))
+  }
+
+// ...
+
+</code>
+</pre>
+
+
+
+<h4 id="step-6-signing-out">Step 6: Signing out</h4>
+
+<p>Signing out when using Firebase for authentication is also simple - just call <code>auth.signOut()</code>!</p>
+
+<p><strong>App.js</strong></p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+// ...
+
+ signOut = () => {
+    auth.signOut()
+  }
+
+  handleUnauth = () => {
+    this.setState({ user: {} })
+    localStorage.removeItem('user')
+  }
+
+// ...
+
+</code>
+</pre>
+
+
+
+<h3 id="rules">Rules</h3>
+
+<p>For your Firebase database, you can set up rules (written in JSON) that specify the conditions under which data is allowed to be read or written.  By default, a newly generated project will require that a user be authenticated to read or write <em>any</em> data.</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+
+</code>
+</pre>
+
+
+
+<p>If you do not have authentication set up yet, these values can be set to <code>true</code>.  This allows <em>anyone</em> to read or write any data in the database.  This can be convenient, but probably not a good idea long-term (and you <em>will</em> get a warning if you do that).</p>
+
+<p>Additional rules can be applied per endpoint:</p>
+
+
+<pre class="line-numbers language-js" rel="js">
+<code class="language-js">
+
+{
+  "rules": {
+    "emails": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "texts": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "users": {
+      "$userId": {
+        ".read": "auth != null && auth.uid == $userId",
+        ".write": "auth != null && auth.uid == $userId"
+      }
+    }
+  }
+}
+
+</code>
+</pre>
+
+
+
+<p>The above rules translate to:</p>
+
+<ul>
+<li>texts and emails can be read by anyone, but only written by authenticated users</li>
+<li>users data can be read and written only by an authenticated user whose <code>uid</code> matches the <code>$userId</code> of that item</li>
+</ul>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li>Chatarang: <a href="https://github.com/xtbc18s2/chatarang">Morning</a> | <a href="https://github.com/xtbc18s2/chatarang/tree/afternoon">Afternoon</a></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<ul>
+<li>Add another authentication method (or two?). Remember, <a href="https://firebase.google.com/docs/auth/web/manage-users#get_the_currently_signed_in_user">documentation</a> is your friend.</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<ul>
+<li>Continue to enhance the app. Be creative!</li>
+</ul>
+
+<h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
+
+<ul>
+<li>Have a great weekend!</li>
+</ul>
 
 
 <footer class=" footline" >
@@ -1330,7 +1498,6 @@ export EDITOR=code
             
                 
                     
-                    
                 
                 
 
@@ -1343,9 +1510,6 @@ export EDITOR=code
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1395,7 +1559,6 @@ export EDITOR=code
             
                 
                     
-                    
                 
                 
 
@@ -1411,9 +1574,6 @@ export EDITOR=code
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1610,6 +1770,7 @@ export EDITOR=code
             
                 
                     
+                    
                 
                 
 
@@ -1617,6 +1778,25 @@ export EDITOR=code
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1655,21 +1835,6 @@ export EDITOR=code
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1692,10 +1857,10 @@ export EDITOR=code
 
 
         
-            <a class="nav nav-prev" href="/setup-windows/git/" title="Git"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/week2/day7/" title="Day 7: React Components &amp; Firebase"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/setup-windows/node/" title="Node.js" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/week2/day5/" title="Day 5: Intro to React" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
