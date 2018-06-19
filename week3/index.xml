@@ -31,7 +31,7 @@ Lecture Videos Morning:
       <description>Tuesday, June 19, 2018
 Lecture Videos Morning:
  Playlist | Day 10, Part 1  Afternoon:
- Playlist | [Day 10, Part 1]()  Topics React Select Refs and the DOM Moment.js Firebase Database Rules Element.scrollIntoView() Examples Firebase Database Rules Again, you can set database rules in Firebase for your application. In our Chatarang app, we made a certain endpoint public while others are private based on whether or not a user is authenticated.</description>
+ Playlist | Day 10, Part 1  Topics React Select Refs and the DOM Moment.js Firebase Database Rules Element.scrollIntoView() Examples Firebase Database Rules Again, you can set database rules in Firebase for your application. In our Chatarang app, we made a certain endpoint public while others are private based on whether or not a user is authenticated.</description>
     </item>
     
   </channel>
