@@ -22,5 +22,17 @@ Lecture Videos Morning:
  Playlist | Day 9, Part 1  Topics Routing  React Router  &amp;lt;Router /&amp;gt; Links and NavLinks Routes history   Fetching Data  The Fetch API Promises Parsing the response  Deployment  Firebase  Examples Routing React Router provides a routing solution that allows us to change what UI we render based on the current URL.</description>
     </item>
     
+    <item>
+      <title>Day 10: Routing in React</title>
+      <link>http://xtbc18s2.github.io/week3/day10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://xtbc18s2.github.io/week3/day10/</guid>
+      <description>Tuesday, June 19, 2018
+Lecture Videos Morning:
+ Playlist | Day 10, Part 1  Afternoon:
+ Playlist | [Day 10, Part 1]()  Topics React Select Refs and the DOM Moment.js Firebase Database Rules Element.scrollIntoView() Examples Firebase Database Rules Again, you can set database rules in Firebase for your application. In our Chatarang app, we made a certain endpoint public while others are private based on whether or not a user is authenticated.</description>
+    </item>
+    
   </channel>
 </rss>

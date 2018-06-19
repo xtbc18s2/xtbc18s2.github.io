@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>Day 7: React Components &amp; Firebase :: Xtern Bootcamp 2018</title>
+    <title>Day 10: Routing in React :: Xtern Bootcamp 2018</title>
     
     
     <link href="/css/nucleus.css?1529428007" rel="stylesheet">
@@ -36,7 +36,7 @@
 <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/week2/day7/">
+  <body class="" data-url="/week3/day10/">
     <nav id="sidebar" class="">
 
 
@@ -730,7 +730,7 @@
   
     
     <li data-nav-id="/week2/" title="Week II" class="dd-item 
-        parent
+        
         
         
         ">
@@ -792,7 +792,7 @@
  
   
     
-      <li data-nav-id="/week2/day7/" title="Day 7: React Components &amp; Firebase" class="dd-item active">
+      <li data-nav-id="/week2/day7/" title="Day 7: React Components &amp; Firebase" class="dd-item ">
         <a href="/week2/day7/">
         Day 7: React Components &amp; Firebase
         
@@ -838,7 +838,7 @@
   
     
     <li data-nav-id="/week3/" title="Week III" class="dd-item 
-        
+        parent
         
         
         ">
@@ -881,7 +881,7 @@
  
   
     
-      <li data-nav-id="/week3/day10/" title="Day 10: Routing in React" class="dd-item ">
+      <li data-nav-id="/week3/day10/" title="Day 10: Routing in React" class="dd-item active">
         <a href="/week3/day10/">
         Day 10: Routing in React
         
@@ -947,7 +947,7 @@
             
           
           
-            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week2/'>Week II</a> > Day 7: React Components & Firebase
+            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week3/'>Week III</a> > Day 10: Routing in React
           
          
           
@@ -966,20 +966,20 @@
 <li><a href="#lecture-videos">Lecture Videos</a></li>
 <li><a href="#topics">Topics</a>
 <ul>
-<li><a href="#react">React</a></li>
-<li><a href="#javascript">JavaScript</a></li>
-<li><a href="#firebase">Firebase</a></li>
+<li>
+<ul>
+<li><a href="#react-select-https-github-com-jedwatson-react-select"><a href="https://github.com/JedWatson/react-select">React Select</a></a></li>
+<li><a href="#refs-and-the-dom-https-reactjs-org-docs-refs-and-the-dom-html"><a href="https://reactjs.org/docs/refs-and-the-dom.html">Refs and the DOM</a></a></li>
+<li><a href="#moment-js-https-momentjs-com"><a href="https://momentjs.com/">Moment.js</a></a></li>
+<li><a href="#firebase-database-rules-https-firebase-google-com-docs-database-security"><a href="https://firebase.google.com/docs/database/security/">Firebase Database Rules</a></a></li>
+<li><a href="#element-scrollintoview-https-developer-mozilla-org-en-us-docs-web-api-element-scrollintoview"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView">Element.scrollIntoView()</a></a></li>
+</ul></li>
 </ul></li>
 <li><a href="#examples">Examples</a>
 <ul>
-<li><a href="#react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></a>
+<li>
 <ul>
-<li><a href="#methods-as-props">Methods as props</a></li>
-<li><a href="#the-component-lifecycle">The Component Lifecycle</a></li>
-</ul></li>
-<li><a href="#javascript-es6">JavaScript (ES6+)</a>
-<ul>
-<li><a href="#destructuring-assignment">Destructuring assignment</a></li>
+<li><a href="#firebase-database-rules">Firebase Database Rules</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#projects">Projects</a></li>
@@ -1002,7 +1002,7 @@
         
         <div id="body-inner">
           
-            <h1>Day 7: React Components &amp; Firebase</h1>
+            <h1>Day 10: Routing in React</h1>
           
 
         
@@ -1010,122 +1010,54 @@
 
 
 
-<p><date>Wednesday, June 13, 2018</date></p>
+<p><date>Tuesday, June 19, 2018</date></p>
 
 <h2 id="lecture-videos">Lecture Videos</h2>
 
 <p>Morning:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=KCk5Hiq-jrs&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp&amp;index=81">Day 7, Part 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=_u204Lp---Y&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp&amp;index=127">Day 10, Part 1</a></li>
 </ul>
 
 <p>Afternoon:</p>
 
 <ul>
-<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | <a href="https://www.youtube.com/watch?v=AGDQRToOTbA&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA&amp;index=86">Day 7, Part 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | [Day 10, Part 1]()</li>
 </ul>
 
 <h2 id="topics">Topics</h2>
 
-<h3 id="react">React</h3>
+<h4 id="react-select-https-github-com-jedwatson-react-select"><a href="https://github.com/JedWatson/react-select">React Select</a></h4>
 
-<ul>
-<li>Methods as props</li>
-<li><a href="https://reactjs.org/docs/conditional-rendering.html#___gatsby">Conditional Rendering</a></li>
-<li>The Component Lifecycle</li>
-<li><a href="https://react-cn.github.io/react/tips/if-else-in-JSX.html">If-Else in JSX</a></li>
-</ul>
+<h4 id="refs-and-the-dom-https-reactjs-org-docs-refs-and-the-dom-html"><a href="https://reactjs.org/docs/refs-and-the-dom.html">Refs and the DOM</a></h4>
 
-<h3 id="javascript">JavaScript</h3>
+<h4 id="moment-js-https-momentjs-com"><a href="https://momentjs.com/">Moment.js</a></h4>
 
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">Spread operator</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">Ternary operators</a></li>
-</ul>
+<h4 id="firebase-database-rules-https-firebase-google-com-docs-database-security"><a href="https://firebase.google.com/docs/database/security/">Firebase Database Rules</a></h4>
 
-<h3 id="firebase">Firebase</h3>
-
-<ul>
-<li><a href="https://firebase.google.com/">Firebase</a></li>
-</ul>
+<h4 id="element-scrollintoview-https-developer-mozilla-org-en-us-docs-web-api-element-scrollintoview"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView">Element.scrollIntoView()</a></h4>
 
 <h2 id="examples">Examples</h2>
 
-<h3 id="react-https-facebook-github-io-react"><a href="https://facebook.github.io/react/">React</a></h3>
+<h4 id="firebase-database-rules">Firebase Database Rules</h4>
 
-<h4 id="methods-as-props">Methods as props</h4>
-
-<p>Sometimes one component needs to update another component&rsquo;s state. It can&rsquo;t do that directly, but it can call a method from that other component if it&rsquo;s available via a prop.</p>
+<p>Again, you can set database rules in Firebase for your application. In our Chatarang app, we made a certain endpoint public while others are private based on whether or not a user is authenticated.</p>
 
 
-  <pre class="language-jsx line-numbers "
-       
-       
-       data-line="5,23"
-       rel="jsx"
-  ><code class="language-jsx">
-  
-import React from 'react'
-import ReactDOM from 'react-dom'
+<pre class="line-numbers language-" rel="">
+<code class="language-">
 
-const PartyButton = ({ celebrate, celebrations }) =&gt; {
-  return &lt;button onClick={celebrate}&gt;Party! {celebrations}&lt;/button&gt;
-}
-
-class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      celebrations: 0,
-    }
-    this.celebrate = this.celebrate.bind(this)
-  }
-
-  celebrate() {
-    const celebrations = this.state.celebrations + 1
-    this.setState({ celebrations })
-  }
-
-  render() {
-    return &lt;PartyButton celebrate={this.celebrate} celebrations={this.state.celebrations} /&gt;
+{
+  "rules": {
+    "users": {
+      ".read": "true",
+      ".write": "auth != null"
+    },
+    ".read": "auth != null",
+    ".write": "auth != null"
   }
 }
-
-ReactDOM.render(&lt;App /&gt;, document.querySelector('main'))
-
-  </code>
-  </pre>
-
-
-
-<h4 id="the-component-lifecycle">The Component Lifecycle</h4>
-
-<ul>
-<li><a href="https://reactjs.org/docs/react-component.html#the-component-lifecycle">React.Component</a></li>
-<li><a href="https://reactjs.org/docs/state-and-lifecycle.html">State and Lifecycle</a></li>
-</ul>
-
-<h3 id="javascript-es6">JavaScript (ES6+)</h3>
-
-<h4 id="destructuring-assignment">Destructuring assignment</h4>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">Destructuring assignment</a> syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
-
-
-<pre class="line-numbers language-js" rel="js">
-<code class="language-js">
-
-const myObj = {
-  a: true,
-  b: 'Destructuring!'
-}
-
-let { a, b } = myObj
-
-console.log(a) // => true
-console.log(b) // => 'Destructuring!'
 
 </code>
 </pre>
@@ -1140,22 +1072,19 @@ console.log(b) // => 'Destructuring!'
 
 <h2 id="homework">Homework</h2>
 
-<ul>
-<li><p>Add support for multiple rooms/channels! <em>Hint</em>: The first argument (<code>endpoint</code>) to <code>base.syncState</code> should be different for each room/channel.</p></li>
-
-<li><p>Don&rsquo;t forget to make the sidebar links work!</p></li>
-</ul>
+<p>Only list public rooms, and rooms in which the current user is listed as a member.</p>
 
 <h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
 
-<ul>
-<li>Add direct messages too!</li>
-</ul>
+<p>Don&rsquo;t allow users to load non-public rooms of which they&rsquo;re not members.</p>
 
 <h3 id="super-mega-bonus-credit-hyper-fighting">Super Mega Bonus Credit Hyper Fighting</h3>
 
+<p>Make a separate UI for direct messages.</p>
+
 <ul>
-<li>Use Firebase authentication when signing in users. <em>Hint</em>: Google authentication is the easiest method.</li>
+<li>List them separately in the sidebar.</li>
+<li>Make a new form (or at least a new button that presents the same form differently).</li>
 </ul>
 
 
@@ -1694,94 +1623,6 @@ console.log(b) // => 'Destructuring!'
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -1822,6 +1663,91 @@ console.log(b) // => 'Destructuring!'
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1832,10 +1758,10 @@ console.log(b) // => 'Destructuring!'
 
 
         
-            <a class="nav nav-prev" href="/week2/day6/" title="Day 6: React"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/week3/day9/" title="Day 9: Routing and Fetching"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/week2/day8/" title="Day 8: Firebase Authentication" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/week3/day9/" title="Day 9: Routing and Fetching" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
