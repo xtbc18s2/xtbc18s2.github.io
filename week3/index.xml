@@ -42,11 +42,11 @@ Lecture Videos Morning:
       <guid>http://xtbc18s2.github.io/week3/day11/</guid>
       <description>Wednesday, June 20, 2018
 Lecture Videos  Playlist | Day 11, Part 1  Afternoon:
- Playlist | [Day 11, Part 1]()  Topics  JavaScript (ES6)
+ Playlist | Day 11, Part 1  Topics  JavaScript (ES6)
  Object.keys() Array.prototype.filter() Array.prototype.find() String.prototype.split() Array.prototype.join()  Emoji-mart
  Inline SVG vs. Icon Fonts
   Examples Emoji-mart Run npm install --save emoji-mart or yarn add emoji-mart to install in your Chatarang project.
-Projects  Chatarang: Morning | Afternoon  Homework See how far you can get implementing emoji reactions.</description>
+Authorized Domains in Firebase  If you have the page hosted somewhere else (like GitHub pages) you might see an error message that says access is restricted.</description>
     </item>
     
   </channel>
