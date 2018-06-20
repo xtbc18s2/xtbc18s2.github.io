@@ -9,7 +9,7 @@
 
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
-    <title>HTML &amp; CSS :: Xtern Bootcamp 2018</title>
+    <title>Day 11: React, ES6, Cont&#39;d :: Xtern Bootcamp 2018</title>
     
     
     <link href="/css/nucleus.css?1529516173" rel="stylesheet">
@@ -36,7 +36,7 @@
 <link href="/css/xtern.css" rel="stylesheet">
 
   </head>
-  <body class="" data-url="/prereqs/html-css/">
+  <body class="" data-url="/week3/day11/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/prereqs/" title="Prerequisites" class="dd-item 
-        parent
+        
         
         
         ">
@@ -119,7 +119,7 @@
  
   
     
-      <li data-nav-id="/prereqs/html-css/" title="HTML &amp; CSS" class="dd-item active">
+      <li data-nav-id="/prereqs/html-css/" title="HTML &amp; CSS" class="dd-item ">
         <a href="/prereqs/html-css/">
         HTML &amp; CSS
         
@@ -838,7 +838,7 @@
   
     
     <li data-nav-id="/week3/" title="Week III" class="dd-item 
-        
+        parent
         
         
         ">
@@ -900,7 +900,7 @@
  
   
     
-      <li data-nav-id="/week3/day11/" title="Day 11: React, ES6, Cont&#39;d" class="dd-item ">
+      <li data-nav-id="/week3/day11/" title="Day 11: React, ES6, Cont&#39;d" class="dd-item active">
         <a href="/week3/day11/">
         Day 11: React, ES6, Cont&#39;d
         
@@ -966,7 +966,7 @@
             
           
           
-            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/prereqs/'>Prerequisites</a> > HTML & CSS
+            <a href='/'>Xtern Bootcamp 2018</a> > <a href='/week3/'>Week III</a> > Day 11: React, ES6, Cont'd
           
          
           
@@ -982,10 +982,19 @@
 <ul>
 <li>
 <ul>
+<li><a href="#lecture-videos">Lecture Videos</a></li>
+<li><a href="#topics">Topics</a></li>
+<li><a href="#examples">Examples</a>
+<ul>
 <li>
 <ul>
-<li><a href="#learn-html-and-css-part-1-from-codecademy">Learn HTML and CSS: Part 1, from Codecademy</a></li>
-<li><a href="#dash">Dash</a></li>
+<li><a href="#emoji-mart">Emoji-mart</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#homework">Homework</a>
+<ul>
+<li><a href="#super-mega-bonus-credit">Super Mega Bonus Credit</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1001,7 +1010,7 @@
         
         <div id="body-inner">
           
-            <h1>HTML &amp; CSS</h1>
+            <h1>Day 11: React, ES6, Cont&#39;d</h1>
           
 
         
@@ -1009,32 +1018,57 @@
 
 
 
-<p>You can&rsquo;t get very far building the web without an understanding of HTML. HTML defines the <em>structure</em> of web content, and it&rsquo;s worth your time to familiarize yourself with various elements and their attributes.</p>
+<p><date>Wednesday, June 20, 2018</date></p>
 
-<p>Cascading Stylesheets (CSS) define the <em>presentation</em> of web content. Even if you have little interest in becoming a professional designer, you can gain a lot from learning the basics of CSS. For example, you&rsquo;ll use CSS selector sytax to target elements in JavaScript.</p>
+<h2 id="lecture-videos">Lecture Videos</h2>
 
-<p>If you already have a decent handle on these topics, you&rsquo;ll fly right through the lessons, but you may pick up a little bit of new knowledge along the way. I often find that when I review the basics, there&rsquo;s something that I haven&rsquo;t thought about in a long time that I ought to be using more often.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AxtgfBl_yIw&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp">Playlist</a> | <a href="https://www.youtube.com/watch?v=ApBCRJZ413g&amp;list=PLuT2TqJuwaY-wZ8GKN0bjgCwNVf1WpEGp&amp;index=141">Day 11, Part 1</a></li>
+</ul>
 
+<p>Afternoon:</p>
 
-  <div class="aside aside-info">
-  
-    <h4>Note</h4>
-    
-  
-  <div class="body">
-  <p>One of these courses or the other should be plenty of preparation. Don&rsquo;t feel like you need to complete both, unless you just want the extra practice.</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GOQvgEk9IBM&amp;list=PLuT2TqJuwaY90mQ7meSdhHMX6FbfCaLNA">Playlist</a> | [Day 11, Part 1]()</li>
+</ul>
 
-  </div>
-</div>
+<h2 id="topics">Topics</h2>
 
+<ul>
+<li><p>JavaScript (ES6)</p>
 
-<h3 id="learn-html-and-css-part-1-from-codecademy">Learn HTML and CSS: Part 1, from Codecademy</h3>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys">Object.keys()</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">Array.prototype.filter()</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find">Array.prototype.find()</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split">String.prototype.split()</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join">Array.prototype.join()</a></li>
+</ul></li>
 
-<p>Codecademy&rsquo;s free course <a href="https://www.codecademy.com/learn/learn-html-css">Learn HTML &amp; CSS: Part 1</a> has been rewritten from scratch to use the latest versions of HTML and CSS, replacing a much older course. You can complete the course right in the browser. This is a free course. You can ignore the big $199 banner; that&rsquo;s their attempt at an upsell. (Can&rsquo;t blame them for trying.)</p>
+<li><p><a href="https://github.com/missive/emoji-mart">Emoji-mart</a></p></li>
 
-<h3 id="dash">Dash</h3>
+<li><p><a href="https://css-tricks.com/icon-fonts-vs-svg/">Inline SVG vs. Icon Fonts</a></p></li>
+</ul>
 
-<p><a href="https://dash.generalassemb.ly/">Dash</a>, from General Assembly, offers several basic interactive courses that teach the fundamentals of modern HTML and CSS&mdash;and even a little bit of JavaScript. And it&rsquo;s all free, browser-based, and based on the latest standards.</p>
+<h2 id="examples">Examples</h2>
+
+<h4 id="emoji-mart">Emoji-mart</h4>
+
+<p>Run <code>npm install --save emoji-mart</code> or <code>yarn add emoji-mart</code> to install in your Chatarang project.</p>
+
+<h2 id="projects">Projects</h2>
+
+<ul>
+<li>Chatarang: <a href="https://github.com/xtbc18s2/chatarang">Morning</a> | <a href="https://github.com/xtbc18s2/chatarang/tree/afternoon">Afternoon</a></li>
+</ul>
+
+<h2 id="homework">Homework</h2>
+
+<p>See how far you can get implementing emoji reactions.</p>
+
+<h3 id="super-mega-bonus-credit">Super Mega Bonus Credit</h3>
+
+<p>Reflect on how much you&rsquo;ve learned these last three weeks!</p>
 
 
 <footer class=" footline" >
@@ -1073,20 +1107,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                         
                         
                     
@@ -1097,125 +1117,6 @@
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1489,6 +1390,134 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1657,6 +1686,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1664,6 +1694,25 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -1686,21 +1735,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1723,10 +1757,10 @@
 
 
         
-            <a class="nav nav-prev" href="/prereqs/codewars/" title="Codewars"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/week3/day10/" title="Day 10: React &amp; Firebase Cont&#39;d"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/prereqs/javascript/" title="JavaScript" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/week3/day9/" title="Day 9: Routing and Fetching" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
