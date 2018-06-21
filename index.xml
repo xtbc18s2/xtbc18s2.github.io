@@ -184,10 +184,12 @@ Intermediate JavaScript 30 by Wes Bos I highly recommend completing JavaScript 3
       
       <guid>http://xtbc18s2.github.io/week3/day11/</guid>
       <description>Wednesday, June 20, 2018
-Lecture Videos  Playlist | Day 11, Part 1  Afternoon:
+Lecture Videos Morning:
+ Playlist | Day 11, Part 1  Afternoon:
  Playlist | Day 11, Part 1  Topics  JavaScript (ES6)
  Object.keys() Array.prototype.filter() Array.prototype.find() String.prototype.split() Array.prototype.join()  Emoji-mart
  Inline SVG vs. Icon Fonts
+ Stacking Order
   Examples Emoji-mart Run npm install --save emoji-mart or yarn add emoji-mart to install in your Chatarang project.
 Authorized Domains in Firebase  If you have the page hosted somewhere else (like GitHub pages) you might see an error message that says access is restricted.</description>
     </item>
